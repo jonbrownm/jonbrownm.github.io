@@ -1,0 +1,964 @@
+{  
+   "records":[  
+      {  
+         "acronym": "ADR",
+         "expansion": "American Depositary Receipt"
+      },
+      {  
+         "acronym": "AP",
+         "expansion": "Accounts payable"
+      },
+      {  
+         "acronym": "ARPU",
+         "expansion": "Average revenue per user"
+      },
+      {  
+         "acronym": "ASP",
+         "expansion": "Average selling price"
+      },
+      {  
+         "acronym": "ASAP",
+         "expansion": "As soon as possible"
+      },
+      {  
+         "acronym": "agcy.",
+         "expansion": "Agency"
+      },
+      {  
+         "acronym": "agt.",
+         "expansion": "Agent"
+      },
+      {  
+         "acronym": "asst.",
+         "expansion": "Assistant"
+      },
+      {  
+         "acronym": "a/c.",
+         "expansion": "Account"
+      },
+      {  
+         "acronym": "BAU",
+         "expansion": "Business As Usual"
+      },
+      {  
+         "acronym": "BRU",
+         "expansion": "Business Recovery Unit"
+      },
+      {  
+         "acronym": "B2B",
+         "expansion": "Business-to-business"
+      },
+      {  
+         "acronym": "B2C",
+         "expansion": "B2C Business to Consumer"
+      },
+      {  
+         "acronym": "B2G",
+         "expansion": "Business-to-government"
+      },
+      {  
+         "acronym": "BUSI",
+         "expansion": "Business"
+      },
+      {  
+         "acronym": "bldg.",
+         "expansion": "Building"
+      },
+      {  
+         "acronym": "CAO",
+         "expansion": "Chief Accounting Officer"
+      },
+      {  
+         "acronym": "CAGR",
+         "expansion": "Compound annual growth rate"
+      },
+      {  
+         "acronym": "CAPEX",
+         "expansion": "Capital Expenditure"
+      },
+      {  
+         "acronym": "CAPM",
+         "expansion": "Capital asset pricing model"
+      },
+      {  
+         "acronym": "CBOE",
+         "expansion": "Chicago Board Options Exchange"
+      },
+      {  
+         "acronym": "CBOT",
+         "expansion": "Chicago Board of Trade"
+      },
+      {  
+         "acronym": "CDO",
+         "expansion": "Collateralized debt obligation"
+      },
+      {  
+         "acronym": "CDS",
+         "expansion": "Credit default swap"
+      },
+      {  
+         "acronym": "CEO",
+         "expansion": "Chief executive officer"
+      },
+      {  
+         "acronym": "COA",
+         "expansion": "Chart of Account"
+      },
+      {  
+         "acronym": "CFA",
+         "expansion": "Chartered Financial Analyst"
+      },
+      {  
+         "acronym": "CFD",
+         "expansion": "Contract for difference"
+      },
+      {  
+         "acronym": "CFC",
+         "expansion": "Consumption of fixed capital"
+      },
+      {  
+         "acronym": "CFCT",
+         "expansion": "Cash Flow Cycle Time"
+      },
+      {  
+         "acronym": "CFM",
+         "expansion": "Certified Financial Manager"
+      },
+      {  
+         "acronym": "CFO PEX",
+         "expansion": "Capital Expenditures"
+      },
+      {  
+         "acronym": "CFO ",
+         "expansion": "Chief financial officer"
+      },
+      {  
+         "acronym": "CFS",
+         "expansion": "Consolidated Financial Statement"
+      },
+      {  
+         "acronym": "CIA",
+         "expansion": "Certified Internal Auditor"
+      },
+      {  
+         "acronym": "CIF",
+         "expansion": "Cost Insurance With Freight"
+      },
+      {  
+         "acronym": "CIMA ",
+         "expansion": "Chartered Institute of Management Accountants"
+      },
+      {  
+         "acronym": "CIO",
+         "expansion": "Chief Information Officer or Chief Investment Officer"
+      },
+      {  
+         "acronym": "CISA",
+         "expansion": "Certified Information Systems Auditor"
+      },
+      {  
+         "acronym": "CMA",
+         "expansion": "Certified Management Accountant"
+      },
+      {  
+         "acronym": "CMO",
+         "expansion": "Chief Marketing Officer"
+      },
+      {  
+         "acronym": "COB",
+         "expansion": "Close of Business"
+      },
+      {  
+         "acronym": "COGS",
+         "expansion": "Cost of Goods Sold"
+      },
+      {  
+         "acronym": "Corp.",
+         "expansion": "Corporation"
+      },
+      {  
+         "acronym": "COO",
+         "expansion": "Chief Operating Officer"
+      },
+      {  
+         "acronym": "CPA",
+         "expansion": "Certified Public Accountant"
+      },
+      {  
+         "acronym": "CPI",
+         "expansion": "Consumer Price Index"
+      },
+      {  
+         "acronym": "CPP",
+         "expansion": "Certified Payroll Professional"
+      },
+      {  
+         "acronym": "CPU",
+         "expansion": "Cost per Unit"
+      },
+      {  
+         "acronym": "CSI",
+         "expansion": "Continual Service Improvement"
+      },
+      {  
+         "acronym": "CSO",
+         "expansion": "Chief Security Officer"
+      },
+      {  
+         "acronym": "CSR",
+         "expansion": "Corporate social responsibility"
+      },
+      {  
+         "acronym": "CRM",
+         "expansion": "Customer Relationship Management"
+      },
+      {  
+         "acronym": "CVP",
+         "expansion": "Cost Volume Profit"
+      },
+      {  
+         "acronym": "C2B",
+         "expansion": "Consumer-to-business"
+      },
+      {  
+         "acronym": "CTO",
+         "expansion": "Chief Technology Officer"
+      },
+      {  
+         "acronym": "C&F",
+         "expansion": "Cost With Freight"
+      },
+      {  
+         "acronym": "DDA",
+         "expansion": "Depletion Depletion Amortization"
+      },
+      {  
+         "acronym": "DI",
+         "expansion": "Dispatch information"
+      },
+      {  
+         "acronym": "disc.",
+         "expansion": "Discount"
+      },
+      {  
+         "acronym": "dept.",
+         "expansion": "Department"
+      },
+      {  
+         "acronym": "DMA",
+         "expansion": "Direct market access"
+      },
+      {  
+         "acronym": "DSP",
+         "expansion": "Delivery service provider"
+      },
+      {  
+         "acronym": "EACs",
+         "expansion": "Export Assistance Centers"
+      },
+      {  
+         "acronym": "EAR",
+         "expansion": "Effective annual rate"
+      },
+      {  
+         "acronym": "EAY",
+         "expansion": "Effective Annual Yield"
+      },
+      {  
+         "acronym": "EBIT",
+         "expansion": "Earnings before interest and taxes"
+      },
+      {  
+         "acronym": "EBITDA",
+         "expansion": "Earnings before Interest, Taxes, Depreciation, and Amortization"
+      },
+      {  
+         "acronym": "ECB",
+         "expansion": "European Central Bank"
+      },
+      {  
+         "acronym": "EDI",
+         "expansion": "Electronic Data Interchange"
+      },
+      {  
+         "acronym": "EFTPOS",
+         "expansion": "Electronic Funds Transfer at Point of Sale"
+      },
+      {  
+         "acronym": "EPS",
+         "expansion": "Earnings per share"
+      },
+      {  
+         "acronym": "EXP",
+         "expansion": "Export"
+      },
+      {  
+         "acronym": "EOB",
+         "expansion": "End Of the Business"
+      },
+      {  
+         "acronym": "EOD",
+         "expansion": "End Of the Day"
+      },
+      {  
+         "acronym": "ERP",
+         "expansion": "Enterprise Resource Planning"
+      },
+      {  
+         "acronym": "ETA",
+         "expansion": "Estimated Time of Arrival"
+      },
+      {  
+         "acronym": "ETD",
+         "expansion": "Estimated Time of Delivery"
+      },
+      {  
+         "acronym": "EMI",
+         "expansion": "Equated Monthly Installment"
+      },
+      {  
+         "acronym": "FAB",
+         "expansion": "Feature Advantage Benefits"
+      },
+      {  
+         "acronym": "FDP",
+         "expansion": "Finance Department"
+      },
+      {  
+         "acronym": "FOB",
+         "expansion": "Freight On Board"
+      },
+      {  
+         "acronym": "FIFO",
+         "expansion": "First In, First Out"
+      },
+      {  
+         "acronym": "FinMin",
+         "expansion": "Finance Minister"
+      },
+      {  
+         "acronym": "Fin Min",
+         "expansion": "Finance Minister"
+      },
+      {  
+         "acronym": "FL",
+         "expansion": "Financial leverage"
+      },
+      {  
+         "acronym": "FOMC",
+         "expansion": "Federal Open Market Committee"
+      },
+      {  
+         "acronym": "FP&A",
+         "expansion": "Financial Planning & Analysis"
+      },
+      {  
+         "acronym": "FPO",
+         "expansion": "Follow on public offer"
+      },
+      {  
+         "acronym": "FIX",
+         "expansion": "Financial Information Exchange"
+      },
+      {  
+         "acronym": "FSA",
+         "expansion": "Financial Services Authority"
+      },
+      {  
+         "acronym": "FX",
+         "expansion": "Foreign exchange market"
+      },
+      {  
+         "acronym": "FYI",
+         "expansion": "For Your Information"
+      },
+      {  
+         "acronym": "FOC",
+         "expansion": "Free Of Cost"
+      },
+      {  
+         "acronym": "GAAP",
+         "expansion": "Generally Accepted Accounting Principles"
+      },
+      {  
+         "acronym": "GAAS",
+         "expansion": "Generally Accepted Audit Standards"
+      },
+      {  
+         "acronym": "GDP",
+         "expansion": "Gross Domestic Product"
+      },
+      {  
+         "acronym": "GFCF",
+         "expansion": "Gross fixed capital formation"
+      },
+      {  
+         "acronym": "GRN",
+         "expansion": "Goods Receipt Note"
+      },
+      {  
+         "acronym": "GP",
+         "expansion": "Gross Profit"
+      },
+      {  
+         "acronym": "GPO",
+         "expansion": "Group purchasing organization"
+      },
+      {  
+         "acronym": "GL",
+         "expansion": "General Ledger"
+      },
+      {  
+         "acronym": "GSV",
+         "expansion": "Gross Sales Value"
+      },
+      {  
+         "acronym": "HR",
+         "expansion": "Human Resources"
+      },
+      {  
+         "acronym": "HQ",
+         "expansion": "Headquarters"
+      },
+      {  
+         "acronym": "HRD",
+         "expansion": "Human Resource Development"
+      },
+      {  
+         "acronym": "IAS",
+         "expansion": "International Accounting Standards"
+      },
+      {  
+         "acronym": "ICB",
+         "expansion": "Industry Classification Benchmark"
+      },
+      {  
+         "acronym": "ICRM",
+         "expansion": "Innovative Customer Relationship Management"
+      },
+      {  
+         "acronym": "IE",
+         "expansion": "Interest expense"
+      },
+      {  
+         "acronym": "IFRS",
+         "expansion": "International Financial Reporting Standard"
+      },
+      {  
+         "acronym": "ILCLP",
+         "expansion": "IdentLogic Systems Customer Loyalty Program"
+      },
+      {  
+         "acronym": "IMF",
+         "expansion": "International Monetary Fund"
+      },
+      {  
+         "acronym": "IMP",
+         "expansion": "Import"
+      },
+      {  
+         "acronym": "Inc.",
+         "expansion": "Corporation|Incorporated"
+      },
+      {  
+         "acronym": "IPO",
+         "expansion": "Initial Public Offering"
+      },
+      {  
+         "acronym": "IR",
+         "expansion": "Interest Rate - typically referring to an IR derivative product"
+      },
+      {  
+         "acronym": "ISM",
+         "expansion": "Institute of Supply Management"
+      },
+      {  
+         "acronym": "IYR",
+         "expansion": "In Year Revenue"
+      },
+      {  
+         "acronym": "J",
+         "expansion": "Journal"
+      },
+      {  
+         "acronym": "JIT",
+         "expansion": "Just in time"
+      },
+      {  
+         "acronym": "JIS",
+         "expansion": "Just in sequence"
+      },
+      {  
+         "acronym": "K",
+         "expansion": "Is used as an abbreviation for 1,000. For example $225K would be understood to mean $225,000, and $3.6K would be understood to mean $3,600.  Multiple K's are not commonly used to represent larger numbers.  In other words, it would look odd to use $1.2KK to represent $1,200,000."
+      },
+      {  
+         "acronym": "KPI",
+         "expansion": "'Key Performance Indicators' refers to a type of performance measurement. An organization may use KPIs to evaluate its success, or to evaluate the success of a particular activity in which it is engaged."
+      },
+      {  
+         "acronym": "KYC",
+         "expansion": "'Know Your Customer' refers to due diligence activities that financial institutions and other regulated companies must perform to ascertain relevant information."
+      },
+      {  
+         "acronym": "LBO",
+         "expansion": "Leveraged buyout|Leveraged Buyout"
+      },
+      {  
+         "acronym": "LC",
+         "expansion": "Letter of credit"
+      },
+      {  
+         "acronym": "LIBOR",
+         "expansion": "London Interbank Offered Rate"
+      },
+      {  
+         "acronym": "LIFFE",
+         "expansion": "London International Financial Futures and Options Exchange"
+      },
+      {  
+         "acronym": "LIFO",
+         "expansion": "Last In, First Out"
+      },
+      {  
+         "acronym": "LLC",
+         "expansion": "Limited Liability Company"
+      },
+      {  
+         "acronym": "LME",
+         "expansion": "London Metal Exchange"
+      },
+      {  
+         "acronym": "Ltd.",
+         "expansion": "Limited Company"
+      },
+      {  
+         "acronym": "MBS",
+         "expansion": "mortgage-backed security"
+      },
+      {  
+         "acronym": "MPC",
+         "expansion": "marginal propensity to consume"
+      },
+      {  
+         "acronym": "MTD",
+         "expansion": "Month-to-date"
+      },
+      {  
+         "acronym": "MOQ",
+         "expansion": "Minimum Order Quantity"
+      },
+      {  
+         "acronym": "MOU",
+         "expansion": "Memorandum Of Understanding"
+      },
+      {  
+         "acronym": "MRO",
+         "expansion": "Maintenance, Repair, and Operations"
+      },
+      {  
+         "acronym": "MSOD",
+         "expansion": "Monthly Statement of Select Operational Data"
+      },
+      {  
+         "acronym": "MSRP",
+         "expansion": "Manufacturer's Suggested Retail Price"
+      },
+      {  
+         "acronym": "mfg.",
+         "expansion": "Manufacturing"
+      },
+      {  
+         "acronym": "MGMT",
+         "expansion": "Management"
+      },
+      {  
+         "acronym": "MoM",
+         "expansion": "Month on Month / Month over Month"
+      },
+      {  
+         "acronym": "NAV",
+         "expansion": "Net asset value"
+      },
+      {  
+         "acronym": "NCBO",
+         "expansion": "No Change of Beneficial Ownership"
+      },
+      {  
+         "acronym": "NCND",
+         "expansion": "Non-Circumvent and Non-Disclosure"
+      },
+      {  
+         "acronym": "NDA",
+         "expansion": "Non-Disclosure Agreement"
+      },
+      {  
+         "acronym": "NII",
+         "expansion": "Net Interest Income"
+      },
+      {  
+         "acronym": "NOA",
+         "expansion": "Net Operating Assets"
+      },
+      {  
+         "acronym": "NOI",
+         "expansion": "Net Operating Income"
+      },
+      {  
+         "acronym": "NOPAT",
+         "expansion": "Net Operating Profit After Tax"
+      },
+      {  
+         "acronym": "NPV",
+         "expansion": "Net Present Value"
+      },
+      {  
+         "acronym": "NIM",
+         "expansion": "Net Interest Margin"
+      },
+      {  
+         "acronym": "NTE",
+         "expansion": "Not To Exceed"
+      },
+      {  
+         "acronym": "NYMEX",
+         "expansion": "New York Mercantile Exchange"
+      },
+      {  
+         "acronym": "NYSE",
+         "expansion": "New York Stock Exchange"
+      },
+      {  
+         "acronym": "OC",
+         "expansion": "Opportunity Cost"
+      },
+      {  
+         "acronym": "OCF",
+         "expansion": "Operating cash flow"
+      },
+      {  
+         "acronym": "OECD",
+         "expansion": "Organisation for Economic Co-operation and Development"
+      },
+      {  
+         "acronym": "OEM",
+         "expansion": "Original Equipment Manufacturer"
+      },
+      {  
+         "acronym": "OIBDA",
+         "expansion": "Operating Income Before Depreciation And Amortization"
+      },
+      {  
+         "acronym": "OPEX",
+         "expansion": "Operating expense|Operational Expenditures"
+      },
+      {  
+         "acronym": "OTC",
+         "expansion": "Over-the-counter (finance)"
+      },
+      {  
+         "acronym": "PA",
+         "expansion": "Purchasing agent"
+      },
+      {  
+         "acronym": "PAT",
+         "expansion": "Profit After Tax"
+      },
+      {  
+         "acronym": "PBT",
+         "expansion": "Profit Before Tax"
+      },
+      {  
+         "acronym": "P/E",
+         "expansion": "Price-to-earnings ratio"
+      },
+      {  
+         "acronym": "PEG",
+         "expansion": "Price-to-earnings growth ratio"
+      },
+      {  
+         "acronym": "P&L",
+         "expansion": "Profit and Loss"
+      },
+      {  
+         "acronym": "PI",
+         "expansion": "Professional Indemnity (insurance coverage)"
+      },
+      {  
+         "acronym": "pip",
+         "expansion": "Percentage in point"
+      },
+      {  
+         "acronym": "PMAC",
+         "expansion": "Period Moving Average Cost"
+      },
+      {  
+         "acronym": "PO",
+         "expansion": "Profit Objective or Purchase Order"
+      },
+      {  
+         "acronym": "PP&E",
+         "expansion": "Property, plant, and equipment"
+      },
+      {  
+         "acronym": "PPP",
+         "expansion": "Public-private partnership"
+      },
+      {  
+         "acronym": "PPP",
+         "expansion": "Purchasing power parity"
+      },
+      {  
+         "acronym": "PR",
+         "expansion": "Purchase Requisition"
+      },
+      {  
+         "acronym": "PHEK ",
+         "expansion": "Planherstellungskosten (Product Planning cost)"
+      },
+      {  
+         "acronym": "QC",
+         "expansion": "Quality control or Quality costs"
+      },
+      {  
+         "acronym": "QoQ",
+         "expansion": "Quarter on quarter"
+      },
+      {  
+         "acronym": "q/q",
+         "expansion": "Quarter on quarter"
+      },
+      {  
+         "acronym": "QTD",
+         "expansion": "Quarter-to-date"
+      },
+      {  
+         "acronym": "RE",
+         "expansion": "Retained Earnings"
+      },
+      {  
+         "acronym": "RFP",
+         "expansion": "Request for Proposal"
+      },
+      {  
+         "acronym": "ROA",
+         "expansion": "Return on assets"
+      },
+      {  
+         "acronym": "ROCE",
+         "expansion": "Return On Capital Employed"
+      },
+      {  
+         "acronym": "ROE",
+         "expansion": "Return on Equity"
+      },
+      {  
+         "acronym": "ROI",
+         "expansion": "Return on Investment"
+      },
+      {  
+         "acronym": "ROIC",
+         "expansion": "Return on Invested Capital"
+      },
+      {  
+         "acronym": "RONA",
+         "expansion": "Return on net assets"
+      },
+      {  
+         "acronym": "ROS",
+         "expansion": "Return on Sales"
+      },
+      {  
+         "acronym": "RR",
+         "expansion": "Resource rent"
+      },
+      {  
+         "acronym": "RSP",
+         "expansion": "Retail selling price"
+      },
+      {  
+         "acronym": "R&D",
+         "expansion": "Research and Development"
+      },
+      {  
+         "acronym": "St",
+         "expansion": "Sales, during time period t"
+      },
+      {  
+         "acronym": "S&OP",
+         "acronym": "Sales and operations planning"
+      },
+      {  
+         "acronym": "SAAS",
+         "expansion": "Software-as-a-Service"
+      },
+      {  
+         "acronym": "SCM",
+         "expansion": "Supply Chain Management"
+      },
+      {  
+         "acronym": "SCBA",
+         "expansion": "Social Cost Benefit Analysis"
+      },
+      {  
+         "acronym": "SEBI",
+         "expansion": "Securities and Exchange Board of India"
+      },
+      {  
+         "acronym": "SEC",
+         "expansion": "Securities and Exchange Commission"
+      },
+      {  
+         "acronym": "SG&A",
+         "expansion": "Sales, General, and Administrative expenses"
+      },
+      {  
+         "acronym": "SIR",
+         "expansion": "Stores Issuance Requisition"
+      },
+      {  
+         "acronym": "SIOP",
+         "expansion": "Sales Inventory and Operations Plan"
+      },
+      {  
+         "acronym": "SIV",
+         "expansion": "Structured investment vehicle"
+      },
+      {  
+         "acronym": "SKU",
+         "expansion": "Stock keeping unit"
+      },
+      {  
+         "acronym": "SME",
+         "expansion": "Small and Medium Enterprises"
+      },
+      {  
+         "acronym": "SOHO",
+         "expansion": "Small Office/Home Office"
+      },
+      {  
+         "acronym": "SOX",
+         "expansion": "Sarbanes-Oxley"
+      },
+      {  
+         "acronym": "SROI",
+         "expansion": "Social return on investment"
+      },
+      {  
+         "acronym": "SOP",
+         "expansion": "Standard Operating Procedure"
+      },
+      {  
+         "acronym": "SOW",
+         "expansion": "Statement Of Work"
+      },
+      {  
+         "acronym": "TCO",
+         "expansion": "Total Cost of Ownership"
+      },
+      {  
+         "acronym": "TCV",
+         "expansion": "Total Contract Value"
+      },
+      {  
+         "acronym": "TSR",
+         "expansion": "Total Shareholder Return"
+      },
+      {  
+         "acronym": "TB",
+         "expansion": "Transaction Banking"
+      },
+      {  
+         "acronym": "TBD",
+         "expansion": "To Be Defined"
+      },
+      {  
+         "acronym": "TBC",
+         "expansion": "To Be Completed"
+      },
+      {  
+         "acronym": "USP",
+         "expansion": "Unique Selling Propositon"
+      },
+      {  
+         "acronym": "VAD",
+         "expansion": "Value-Added Distributor"
+      },
+      {  
+         "acronym": "VAT",
+         "expansion": "Value-Added Tax"
+      },
+      {  
+         "acronym": "VAR",
+         "expansion": "Value-Added Reseller"
+      },
+      {  
+         "acronym": "WACC",
+         "expansion": "Weighted average cost of capital"
+      },
+      {  
+         "acronym": "WC",
+         "expansion": "Working capital"
+      },
+      {  
+         "acronym": "WFH",
+         "expansion": "Work From Home"
+      },
+      {  
+         "acronym": "wk",
+         "expansion": "week"
+      },
+      {  
+         "acronym": "wrk",
+         "expansion": "work"
+      },
+      {  
+         "acronym": "wo",
+         "expansion": "work order"
+      },
+      {  
+         "acronym": "WIGs",
+         "expansion": "Wildly Important Goals"
+      },
+      {  
+         "acronym": "wasp",
+         "expansion": "weighted average selling price"
+      },
+      {  
+         "acronym": "WLL",
+         "expansion": "With Limited Liability"
+      },
+      {  
+         "acronym": "w.r.t",
+         "expansion": "With Respect To"
+      },
+      {  
+         "acronym": "WTI",
+         "expansion": "West Texas Intermediate"
+      },
+      {  
+         "acronym": "WVN",
+         "expansion": "Withdraw Voucher Note"
+      },
+      {  
+         "acronym": "WHT",
+         "expansion": "Withholding Tax"
+      },
+      {  
+         "acronym": "YTD",
+         "expansion": "Year-to-date"
+      },
+      {  
+         "acronym": "YTG",
+         "expansion": "Year-to-go"
+      },
+      {  
+         "acronym": "YOY",
+         "expansion": "Year-Over-Year"
+      },
+      {  
+         "acronym": "zcyc",
+         "expansion": "Zero Coupon Yield Curve"
+      }
+   ]
+}
