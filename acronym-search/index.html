@@ -30,8 +30,8 @@
 	    			<form>
 	    				<div class="form-group">
 	    					<label><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search acronyms...</label>
-	    					<input type="text" class="form-control" placeholder="eg. ASP, HRD, WTI" data-ng-model="filterTable" data-ng-keyup="filterLength = (acronyms | filter:filterTable).length">
-	    					<p class="help-block" data-ng-show="!filterTable">Enter the acronym you would like to search for.</p>
+	    					<input type="text" class="form-control" placeholder="eg. ASP, HRD, WTI" data-ng-model="filterKeywords" data-ng-keyup="characterLength = (acronyms | filter:filterKeywords).length">
+	    					<p class="help-block" data-ng-show="!filterKeywords">Enter the acronym you would like to search for.</p>
 	    				</div>
 	    			</form>
 
@@ -41,7 +41,7 @@
 	    	<div class="row">
 	    		<div class="col-md-8 col-md-offset-2">
 
-	    			<table class="table table-hover" data-ng-show="filterTable.length > 0 && !(acronyms | filter:filterTable).length == 0">
+	    			<table class="table table-hover" data-ng-show="filterKeywords.length > 0 && !(acronyms | filter:filterKeywords).length == 0">
 	    				<thead>
 	    					<tr>
 	    						<th>Acronym</th>
@@ -50,7 +50,7 @@
 	    					</tr>
 	    				</thead>
 	    				<tbody>
-	    					<tr data-ng-repeat="acronym in acronyms | filter:filterTable | limitTo:filterNo">
+	    					<tr data-ng-repeat="acronym in acronyms | filter:filterKeywords | limitTo:filterKeywordsLength">
 		    					<td>{{ acronym.acronym }}</td>
 		    					<td>{{ acronym.expansion }}</td>
 		    					<td><a href="http://www.google.com/search?q={{ acronym.acronym }}" class="btn btn-default pull-right">Google Search</a></td>
@@ -58,9 +58,9 @@
 	    				</tbody>
 	    			</table>
 
-	    			<div class="alert alert-danger" role="alert" data-ng-show="filterLength == 0"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Sorry, no results found!</div>
+	    			<div class="alert alert-danger" role="alert" data-ng-show="characterLength == 0"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Sorry, no results found!</div>
 
-	    			<div class="alert alert-success" role="alert" data-ng-show="filterTable.length > 0 && !filterLength == 0"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{filterLength}} Results found. <a href="" class="btn btn-success btn-xs pull-right" data-ng-click="filterNo = filterLength" data-ng-show="filterLength > filterNo">View all</a></div>
+	    			<div class="alert alert-success" role="alert" data-ng-show="filterKeywords.length > 0 && !characterLength == 0"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{characterLength}} Results found. <a href="" class="btn btn-success btn-xs pull-right" data-ng-click="filterKeywordsLength = characterLength" data-ng-show="characterLength > filterKeywordsLength">View all</a></div>
 
 	    		</div>
 	    	</div>
