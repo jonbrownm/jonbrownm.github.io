@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Acronym Search</title>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	</head>
+	<body>
+
+	<body ng-app ng-controller="AppCtrl" ng-init="init()">
+
+
+
+	url: <input type="text" ng-model="url" value="" style="width:780px;">
+
+	<ul>
+	    <li>href = {{parser.href}}</li>
+	    <li>protocol = {{parser.protocol}}</li>
+	    <li>host = {{parser.host}}</li>
+	    <li>hostname = {{parser.hostname}}</li>
+	    <li>port = {{parser.port}}</li>
+	    <li>pathname = {{parser.pathname}}</li>
+	    <li>hash = {{parser.hash}}</li>
+	    <li>search = {{parser.search}}</li>
+	</ul>
+
+	</div>
+
+    <script src="acronymApp.js"></script>
+	<script src="acronymController.js"></script>
+
+	</body>
+</html>
