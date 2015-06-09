@@ -26,15 +26,17 @@
 
 	    	<div class="row">
 	    		<div class="col-md-8 col-md-offset-2">
-
-	    			<form>
-	    				<div class="form-group">
-	    					<label><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search acronyms...</label>
-	    					<input type="text" class="form-control" placeholder="eg. ASP, HRD, WTI" data-ng-model="filterKeywords" data-ng-keyup="(resultsLength = (acronyms | filter:filterKeywords).length) && (displayLength = 5)">
-	    					<p class="help-block" data-ng-show="!filterKeywords">Enter the acronym you would like to search for.</p>
-	    				</div>
-	    			</form>
-
+	    			<div class="panel panel-default">
+	    				<div class="panel-body">
+			    			<form>
+			    				<div class="form-group">
+			    					<label><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search acronyms...</label>
+			    					<input type="text" class="form-control" placeholder="eg. ASP, HRD, WTI" data-ng-model="filterKeywords" data-ng-keyup="(resultsLength = (acronyms | filter:filterKeywords).length) && (displayLength = 5)">
+			    					<p class="help-block" data-ng-show="!filterKeywords">Enter the acronym you would like to search for.</p>
+			    				</div>
+			    			</form>
+			    		</div>
+			    	</div>
 	    		</div>
 	    	</div>
 
