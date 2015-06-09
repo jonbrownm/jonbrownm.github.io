@@ -1,5 +1,5 @@
 # jonbrownm.github.io
-github-pages
+Repository containing personal projects and tools
 
 * http://jonbrownm.github.io/
 * http://jonbrownm.github.io/acronym-search/
