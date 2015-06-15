@@ -1,12 +1,13 @@
-function AppCtrl($scope) {
+app.controller('acronymCtrl', function($http, $scope, $location) {
 
-    $scope.$watch('url', function () {
-        $scope.parser.href = $scope.url;
-    });
+	$http.get("data.json")
+    .success(function(response) {$scope.products = response.records;});
 
-    $scope.init = function () {
-        $scope.parser = document.createElement('a');
-        $scope.url = window.location;
-    }
+	if($location.search().telephone && $location.search().product1) {
 
-}
+		$scope.telephone = $location.search().telephone;
+		$scope.product1 = $location.search().product1;
+
+	}
+
+})

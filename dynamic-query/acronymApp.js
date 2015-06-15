@@ -1,1 +1,1 @@
-var app = angular.module('acronymApp', []);
+var app = angular.module("acronymApp", []);

@@ -1,0 +1,17 @@
+{  
+   "catalogue":{  
+      "0":[  
+         "bold",
+         "slight",
+         "angry",
+         "timid"
+      ],
+      "1":[  
+         "black",
+         "white",
+         "yellow",
+         "red",
+         "green"
+      ]
+   }
+}

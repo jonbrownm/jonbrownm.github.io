@@ -1,0 +1,49 @@
+{  
+   "records":[  
+      {  
+         "code": 1234,
+         "name": "ADR",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      },
+      {  
+         "code": 1123,
+         "name": "AP",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      },
+      {  
+         "code": 2311,
+         "name": "ARPU",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      },
+      {  
+         "code": 1191,
+         "name": "ASP",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      },
+      {  
+         "code": 3910,
+         "name": "ASAP",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      },
+      {  
+         "code": 2781,
+         "name": "agcy.",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      },
+      {  
+         "code": 1513,
+         "name": "agt.",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      },
+      {  
+         "code": 3121,
+         "name": "asst.",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      },
+      {  
+         "code": 3563,
+         "name": "a/c.",
+         "description": "Aenean tempor eget dui eget tincidunt. Aenean eget condimentum orci. Donec euismod feugiat est at semper."
+      }
+   ]
+}
