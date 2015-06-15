@@ -1,17 +1,37 @@
 {  
    "catalogue":{  
       "0":[  
-         "bold",
-         "slight",
-         "angry",
-         "timid"
+         "Junior",
+         "Senior",
+         "Lead",
+         "Consultant",
+         "Ninja",
+         "Rockstar",
+         "Mobile"
       ],
       "1":[  
-         "black",
-         "white",
-         "yellow",
-         "red",
-         "green"
+         "Web",
+         "Front End",
+         "UI",
+         "UX",
+         "Interaction",
+         "Art",
+         "Full Stack",
+         "Content",
+         "IT",
+         "Dev",
+         "Product",
+         "SEO"
+      ],
+      "2":[  
+         "Designer",
+         "Developer",
+         "Director",
+         "Strategist",
+         "Technician",
+         "Manager",
+         "Specialist",
+         "Engineer"
       ]
    }
 }
