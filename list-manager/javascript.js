@@ -6,15 +6,19 @@ $( document ).ready(function() {
 
 	for (var i = 0; i < localStorage.length; i++){
 	    key = localStorage.key(i);
-	    itemText = localStorage.getItem(key);
-	    $("ul[data-list]").append("<li data-list-id='" + key + "' class='list-group-item'>" + itemText + "<button class='btn btn-danger btn-xs pull-right' data-list-delete type='submit'>Delete</button></li>")
+		keyInit = key.substring(0, 2)
+
+		if (keyInit == "lm") {
+			itemText = localStorage.getItem(key);
+			$("ul[data-list]").append("<li data-list-id='" + key + "' class='list-group-item'>" + itemText + "<button class='btn btn-danger btn-xs pull-right' data-list-delete type='submit'>Delete</button></li>")
+		}
 	}
 
 	$("input[data-list]").keypress(function(e){
 	    if(e.which == 13){
 	    	
 	        itemText = $("input[data-list]").val();
-	        itemId = Math.floor(Math.random() * (9999 - 1000)) + 1000;
+	        itemId = "lm" + Math.floor((Math.random() * 999) + 1);
 	        localStorage.setItem(itemId, itemText);
 
 	        $("ul[data-list]").append("<li data-list-id='" + itemId + "' class='list-group-item'>" + itemText + "<button class='btn btn-danger btn-xs pull-right' data-list-delete type='submit'>Delete</button></li>")
