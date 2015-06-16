@@ -3,8 +3,8 @@ $( document ).ready(function() {
 	updateTable();
 
 	$("input[data-list]").keypress(function(e){
-	    if(e.which == 13){	
-	        itemText = $("input[data-list]").val();
+		itemText = $("input[data-list]").val();
+	    if(e.which == 13 && itemText != 0){	
 	        itemId = "_" + Math.floor((Math.random() * 999) + 1);
 	        localStorage.setItem(itemId, itemText);
 	        updateTable();
