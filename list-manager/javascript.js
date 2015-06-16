@@ -11,12 +11,12 @@ $( document ).ready(function() {
 
 		if (keyInit == "lm") {
 			itemText = localStorage.getItem(key);
-			$("ul[data-list]").append("<li data-list-id='" + key + "' class='list-group-item'>" + itemText + "<button class='btn btn-danger btn-xs pull-right' data-list-delete type='submit'>Delete</button></li>")
+			$("table[data-list] tbody").append("<tr data-list-id='" + key + "'><td>" + itemText + "</td><td><button class='btn btn-danger btn-xs pull-right' data-list-delete type='submit'>Delete</button></td></tr>")
 		}
 
 	}
 
-	checkListLength();
+	postUpdate();
 
 	$("input[data-list]").keypress(function(e){
 	    if(e.which == 13){
@@ -24,30 +24,25 @@ $( document ).ready(function() {
 	        itemText = $("input[data-list]").val();
 	        itemId = "lm" + Math.floor((Math.random() * 999) + 1);
 	        localStorage.setItem(itemId, itemText);
-	        $("ul[data-list]").append("<li data-list-id='" + itemId + "' class='list-group-item'>" + itemText + "<button class='btn btn-danger btn-xs pull-right' data-list-delete type='submit'>Delete</button></li>")
+	        $("table[data-list] tbody").append("<tr data-list-id='" + itemId + "'><td>" + itemText + "</td><td><button class='btn btn-danger btn-xs pull-right' data-list-delete type='submit'>Delete</button></td></tr>")
 	        $("input[data-list]").val("");
-	        checkListLength();
+	        postUpdate();
 	        
 	    }
 	});
 
-	$("ul.list-group").on("click", "button[data-list-delete]", function(){
+	$("table[data-list] tbody").on("click", "button[data-list-delete]", function(){
 
-		itemId = $(this).parent().attr("data-list-id");
+		itemId = $(this).parent().parent().attr("data-list-id");
+
 		localStorage.removeItem(itemId);
-		$("ul[data-list] li[data-list-id='" + itemId + "']").remove();
-		checkListLength();
+		$("table[data-list] tbody tr[data-list-id='" + itemId + "']").remove();
+		postUpdate();
 
 	});
 	
 });
 
-function checkListLength() {
-	listLength = $("ul[data-list] li").length;
-	if (listLength == 0) {
-		$("ul[data-list-note]").removeClass("hide");			
-	}
-	else {
-		$("ul[data-list-note]").addClass("hide");				
-	}
+function postUpdate() {
+
 }
