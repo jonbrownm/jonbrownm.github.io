@@ -8,7 +8,8 @@ app.controller('acronymCtrl', function($scope, $http) {
   
   $scope.findValue = function(enteredValue) {     
     angular.forEach($scope.myData.Postcode, function(value, key) {
-      if (key === enteredValue) {
+
+      if (key.indexOf(enteredValue) >= 0) {
         $scope.results = [];
         $scope.results.push({postcode: key, business: value[0].business, url: value[0].url});
       }
