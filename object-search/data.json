@@ -2,12 +2,14 @@
     "Postcode": {
         "HA3 7BX": [
             {
-                "location": "Business Centre HA"
+                "business": "Business Centre HA",
+                "url": "http://business.bt.com/btlocalbusiness/manchester"
             }
         ],
         "WD18 7LY": [
             {
-                "location": "Business Centre WO"
+                "business": "Business Centre WO",
+                "url": "http://business.bt.com/btlocalbusiness/london"
             }
         ]
     }

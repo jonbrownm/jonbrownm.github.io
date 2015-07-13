@@ -10,7 +10,7 @@ app.controller('acronymCtrl', function($scope, $http) {
     angular.forEach($scope.myData.Postcode, function(value, key) {
       if (key === enteredValue) {
         $scope.results = [];
-        $scope.results.push({postcode: key, owner: value[0].location});
+        $scope.results.push({postcode: key, business: value[0].business, url: value[0].url});
       }
     });
   };

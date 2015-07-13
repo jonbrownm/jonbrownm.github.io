@@ -20,7 +20,7 @@
 			    	<div class="jumbotron">
 			    		<input type="text" ng-model="enteredValue">
 						<button type="button" ng-Click="findValue(enteredValue)">Search</button>
-						<p ng-repeat="result in results">Postcode: {{result.postcode}}<br />Owner: {{result.owner}}</p>
+						<p ng-repeat="result in results">Postcode: {{result.postcode}}<br />Business: {{result.business}}<br />URL: <a href="{{result.url}}">{{result.url}}</a></p>
 			    	</div>
 
 			    </div>
