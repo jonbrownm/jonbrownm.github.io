@@ -14,9 +14,11 @@ app.controller('acronymCtrl', function($scope, $http) {
     var regex = /[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}/i;
     isPostcode = regex.test(enteredValue);
 
+    outwardCode = enteredValue.slice(0, -3);
+
     angular.forEach($scope.myData.Postcode, function(value, key) {
 
-      if (isPostcode == true && enteredValue.indexOf(key) >= 0) {
+      if (isPostcode == true && key === outwardCode) {
         $scope.results = [];
         $scope.results.push({postcode: key, business: value[0].business, url: value[0].url});
       }
