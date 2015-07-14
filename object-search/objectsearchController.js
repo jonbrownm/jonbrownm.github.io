@@ -1,4 +1,4 @@
-app.controller('acronymCtrl', function($scope, $http) {
+app.controller('objectsearchCtrl', function($scope, $http) {
 
   $http.get("data.json")
 
@@ -21,6 +21,9 @@ app.controller('acronymCtrl', function($scope, $http) {
       if (isPostcode == true && key === outwardCode) {
         $scope.results = [];
         $scope.results.push({postcode: key, business: value[0].business, url: value[0].url});
+
+        // window.location.href = value[0].url;
+
       }
 
     });
