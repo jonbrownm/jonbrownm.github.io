@@ -16,13 +16,23 @@
 
 	    	<div class="row">
 	    		<div class="col-md-8 col-md-offset-2">
-
 			    	<div class="jumbotron">
-			    		<input type="text" ng-model="enteredValue">
-						<button type="button" ng-Click="findValue(enteredValue)">Search</button>
-						<p ng-repeat="result in results">Postcode: {{result.postcode}}<br />Business: {{result.business}}<br />URL: <a href="{{result.url}}">{{result.url}}</a></p>
+			    		<h3>Search</h3>
 			    	</div>
+			    </div>
+			</div>
 
+	    	<div class="row">
+	    		<div class="col-md-8 col-md-offset-2">
+	    			<div class="panel panel-default">
+	    				<div class="panel-body">
+	    					<form>
+	    						<input type="text" ng-model="enteredValue">
+	    						<button type="button" ng-Click="findValue(enteredValue)">Search</button>
+	    						<p ng-repeat="result in results">Postcode: {{result.postcode}}<br />Business: {{result.business}}<br />URL: <a href="{{result.url}}">{{result.url}}</a></p>
+	    					</form>
+	    				</div>
+	    			</div>
 			    </div>
 			</div>
 
