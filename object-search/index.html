@@ -26,9 +26,10 @@
 	    		<div class="col-md-8 col-md-offset-2">
 	    			<div class="panel panel-default">
 	    				<div class="panel-body">
-	    					<form class="form-inline" ng-submit="findValue(enteredValue)">
-	    						<input type="text" class="form-control" placeholder="eg. EC1A 7AJ" ng-model="enteredValue" pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}" required>
-	    						<input class="btn btn-default" type="submit" id="submit" value="Search" />
+	    					<form name="objectsearch" class="form-inline" ng-submit="findValue(enteredValue)">
+	    						<input type="text" name="postcode" class="form-control" placeholder="eg. EC1A 7AJ" autocomplete="off" ng-model="enteredValue" pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}" required>
+	    						<input type="submit" id="submit" class="btn btn-default" value="Search" />
+	    						<p class="help-block" ng-show="objectsearch.postcode.$error.pattern && objectsearch.postcode.$dirty">Enter a valid postcode.</p>
 	    						<p ng-repeat="result in results">Postcode: {{result.postcode}}<br />Business: {{result.business}}<br />URL: <a href="{{result.url}}">{{result.url}}</a></p>
 	    					</form>
 	    				</div>
