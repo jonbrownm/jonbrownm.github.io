@@ -28,7 +28,7 @@
 	    				<div class="panel-body">
 	    					<form class="form-inline" ng-submit="findValue(enteredValue)">
 	    						<input type="text" class="form-control" placeholder="eg. EC1A 7AJ" ng-model="enteredValue">
-	    						<button type="button" class="btn btn-default" ng-Click="findValue(enteredValue)">Search</button>
+	    						<input class="btn btn-default" type="submit" id="submit" value="Search" />
 	    						<p ng-repeat="result in results">Postcode: {{result.postcode}}<br />Business: {{result.business}}<br />URL: <a href="{{result.url}}">{{result.url}}</a></p>
 	    					</form>
 	    				</div>
