@@ -1,4 +1,4 @@
-app.controller('randomCtrl', function($scope, $http) {
+app.controller('randomgeneratorCtrl', function($scope, $http) {
 
     $http.get("data.json")
 
