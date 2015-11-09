@@ -3,7 +3,7 @@ $(document).ready(function() {
     url = document.location.href;
 
     lineReference = url.split("&linereference=")[1].split("&")[0].replace(/\D/g, '');
-    $("[data-results='line-reference']").html(lineReference);
+    $("[data-results='line-reference']").val(lineReference);
 
     $.ajax({        
         url: "results.json",
@@ -23,8 +23,10 @@ $(document).ready(function() {
                 highMinimum = results.options.high[0].minimum;
                 highMaximum = results.options.high[0].maximum;
 
-                $("[data-results='low-range-speed']").html(lowMinimum + " to " + lowMaximum);
-                $("[data-results='high-range-speed']").html(highMinimum + " to " + highMaximum);
+                $("[data-results='low-range-speed']").val(lowMinimum + " to " + lowMaximum);
+                $("[data-results='high-range-speed']").val(highMinimum + " to " + highMaximum);
+
+                productSpeeds = [lowMinimum, lowMaximum, highMinimum, highMaximum];
 
                 renderProducts();
 
@@ -38,9 +40,10 @@ $(document).ready(function() {
 
         products = url.split("?products=")[1].split("&linereference=")[0];
         productsSplit = products.split("&");
+        cacheBuster = new Date().getTime();
 
         $.ajax({
-            url: "data.json",
+            url: "data.json?=" + cacheBuster,
             async: true,
             dataType: "json",
             success: function (products) {
@@ -51,7 +54,7 @@ $(document).ready(function() {
 
                     $.each(products.catalogue, function (i, item) {
                         if (item.product.code == code) {
-                            $(".product-container tbody").append("<tr data-product='" + item.product.code + "'><td>" + item.product.name + "<br /><a href='#' data-toggle='modal' data-target='#Modal" + item.product.code + "'>Find out more</a></td><td><ul></ul></td><td>0</td><td>" + item.product.contract + "</td><td>" + item.product.price + "</td></tr>");
+                            $(".product-container tbody").append("<tr data-product='" + item.product.code + "'><td>" + item.product.name + "<br /><a href='#' data-toggle='modal' data-target='#Modal" + item.product.code + "'>Find out more</a></td><td><ul></ul></td><td>" + productSpeeds[item.product.lowSpeed] + " - " + productSpeeds[item.product.highSpeed] + "</td><td>" + item.product.contract + "</td><td>" + item.product.price + "</td></tr>");
 
                             for (var featureNumber = 0; featureNumber < item.product.features.length; featureNumber++) {
                                 $("tr[data-product='" + item.product.code + "'] td ul").append("<li>" + item.product.features[featureNumber] + "</li>");

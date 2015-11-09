@@ -4,9 +4,10 @@
          "product":{
             "code":1099,
             "name":"Max Super",
-            "contract":"24",
-            "price":"40.00",
-            "speed":2,
+            "contract":12,
+            "price":40.50,
+            "lowSpeed":1,
+            "highSpeed":2,
             "url":"#",
             "features":[
                "Data usage",
@@ -23,9 +24,10 @@
          "product":{
             "code":3478,
             "name":"Max Pro",
-            "contract":"24",
-            "price":"32.00",
-            "speed":1,
+            "contract":24,
+            "price":32.50,
+            "lowSpeed":0,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -42,9 +44,10 @@
          "product":{
             "code":9987,
             "name":"Max",
-            "contract":"24",
-            "price":"25.00",
-            "speed":1,
+            "contract":48,
+            "price":25.50,
+            "lowSpeed":2,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Highspeed data delivery",
@@ -60,9 +63,10 @@
          "product":{
             "code":1133,
             "name":"Widget Super",
-            "contract":"12",
-            "price":"34.00",
-            "speed":0,
+            "contract":6,
+            "price":34.50,
+            "lowSpeed":0,
+            "highSpeed":1,
             "url":"#",
             "features":[
                "Data usage",
@@ -79,9 +83,10 @@
          "product":{
             "code":5829,
             "name":"Widget Super",
-            "contract":"12",
-            "price":"31.00",
-            "speed":0,
+            "contract":24,
+            "price":31.50,
+            "lowSpeed":1,
+            "highSpeed":2,
             "url":"#",
             "features":[
                "Data usage",
@@ -98,9 +103,10 @@
          "product":{
             "code":9772,
             "name":"Widget Super",
-            "contract":"24",
-            "price":"25.00",
-            "speed":0,
+            "contract":6,
+            "price":25.50,
+            "lowSpeed":2,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -118,9 +124,10 @@
          "product":{
             "code":4513,
             "name":"Widget Pro",
-            "contract":"24",
-            "price":"20.00",
-            "speed":0,
+            "contract":48,
+            "price":20.50,
+            "lowSpeed":1,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -137,9 +144,10 @@
          "product":{
             "code":2725,
             "name":"Widget Pro",
-            "contract":"24",
-            "price":"17.00",
-            "speed":0,
+            "contract":24,
+            "price":17.50,
+            "lowSpeed":0,
+            "highSpeed":1,
             "url":"#",
             "features":[
                "Data usage",
@@ -157,9 +165,10 @@
          "product":{
             "code":4374,
             "name":"Widget",
-            "contract":"24",
-            "price":"13.00",
-            "speed":0,
+            "contract":6,
+            "price":13.50,
+            "lowSpeed":1,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Interconnected Mainframe"
@@ -174,9 +183,10 @@
          "product":{
             "code":8962,
             "name":"Widget",
-            "contract":"24",
-            "price":"10.00",
-            "speed":0,
+            "contract":48,
+            "price":10.50,
+            "lowSpeed":2,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -193,9 +203,10 @@
          "product":{
             "code":4156,
             "name":"Widget Super",
-            "contract":"24",
-            "price":"35.50",
-            "speed":0,
+            "contract":36,
+            "price":35.50,
+            "lowSpeed":0,
+            "highSpeed":1,
             "url":"#",
             "features":[
                "Data usage",
@@ -212,9 +223,10 @@
          "product":{
             "code":2695,
             "name":"Widget Super",
-            "contract":"24",
-            "price":"31.80",
-            "speed":0,
+            "contract":12,
+            "price":31.80,
+            "lowSpeed":1,
+            "highSpeed":2,
             "url":"#",
             "features":[
                "Data usage",
@@ -231,9 +243,10 @@
          "product":{
             "code":1469,
             "name":"Widget Super",
-            "contract":"24",
-            "price":"29.60",
-            "speed":0,
+            "contract":6,
+            "price":29.60,
+            "lowSpeed":2,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -251,9 +264,10 @@
          "product":{
             "code":4953,
             "name":"Widget Super",
-            "contract":"24",
-            "price":"29.00",
-            "speed":0,
+            "contract":36,
+            "price":29.50,
+            "lowSpeed":0,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -270,9 +284,10 @@
          "product":{
             "code":1646,
             "name":"Widget Super",
-            "contract":"24",
-            "price":"28.00",
-            "speed":0,
+            "contract":24,
+            "price":28.50,
+            "lowSpeed":0,
+            "highSpeed":2,
             "url":"#",
             "features":[
                "Data usage",
@@ -290,9 +305,10 @@
          "product":{
             "code":5129,
             "name":"Widget Pro",
-            "contract":"24",
-            "price":"19.00",
-            "speed":0,
+            "contract":48,
+            "price":19.50,
+            "lowSpeed":1,
+            "highSpeed":2,
             "url":"#",
             "features":[
                "Data usage",
@@ -309,9 +325,10 @@
          "product":{
             "code":8012,
             "name":"Max Super",
-            "contract":"24",
-            "price":"53.00",
-            "speed":2,
+            "contract":36,
+            "price":53.50,
+            "lowSpeed":2,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -330,9 +347,10 @@
          "product":{
             "code":9542,
             "name":"Max Super",
-            "contract":"24",
-            "price":"47.95",
-            "speed":2,
+            "contract":6,
+            "price":47.95,
+            "lowSpeed":0,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -350,9 +368,10 @@
          "product":{
             "code":9407,
             "name":"Max Pro",
-            "contract":"24",
-            "price":"35.50",
-            "speed":1,
+            "contract":24,
+            "price":35.50,
+            "lowSpeed":2,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Data usage",
@@ -370,9 +389,10 @@
          "product":{
             "code":3527,
             "name":"Max Pro",
-            "contract":"24",
-            "price":"35.20",
-            "speed":1,
+            "contract":48,
+            "price":35.20,
+            "lowSpeed":0,
+            "highSpeed":1,
             "url":"#",
             "features":[
                "Data usage",
@@ -391,9 +411,10 @@
          "product":{
             "code":8549,
             "name":"Max",
-            "contract":"24",
-            "price":"29.60",
-            "speed":1,
+            "contract":36,
+            "price":29.60,
+            "lowSpeed":2,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Highspeed data delivery",
@@ -410,9 +431,10 @@
          "product":{
             "code":7685,
             "name":"Max",
-            "contract":"24",
-            "price":"28.00",
-            "speed":1,
+            "contract":24,
+            "price":28.50,
+            "lowSpeed":1,
+            "highSpeed":3,
             "url":"#",
             "features":[
                "Highspeed data delivery",
@@ -430,9 +452,10 @@
          "product":{
             "code":8762,
             "name":"Widget Pro",
-            "contract":"12",
-            "price":"25.00",
-            "speed":0,
+            "contract":6,
+            "price":25.50,
+            "lowSpeed":0,
+            "highSpeed":1,
             "url":"#",
             "features":[
                "Pro usage",
