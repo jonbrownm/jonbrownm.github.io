@@ -3,8 +3,8 @@
    "options":{  
       "low":[  
          {  
-            "minimum":"3",
-            "maximum":"10"
+            "minimum":"11",
+            "maximum":"18"
          }
       ],
       "high":[  

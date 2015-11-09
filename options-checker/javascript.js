@@ -23,10 +23,10 @@ $(document).ready(function() {
                 highMinimum = results.options.high[0].minimum;
                 highMaximum = results.options.high[0].maximum;
 
-                $("[data-results='low-range-speed']").val(lowMinimum + " to " + lowMaximum);
-                $("[data-results='high-range-speed']").val(highMinimum + " to " + highMaximum);
+                $("[data-results='low-range']").val(lowMinimum + " to " + lowMaximum);
+                $("[data-results='high-range']").val(highMinimum + " to " + highMaximum);
 
-                productSpeeds = [lowMinimum, lowMaximum, highMinimum, highMaximum];
+                productRange = [lowMinimum, lowMaximum, highMinimum, highMaximum];
 
                 renderProducts();
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
                     $.each(products.catalogue, function (i, item) {
                         if (item.product.code == code) {
-                            $(".product-container tbody").append("<tr data-product='" + item.product.code + "'><td>" + item.product.name + "<br /><a href='#' data-toggle='modal' data-target='#Modal" + item.product.code + "'>Find out more</a></td><td><ul></ul></td><td>" + productSpeeds[item.product.lowSpeed] + " - " + productSpeeds[item.product.highSpeed] + "</td><td>" + item.product.contract + "</td><td>" + item.product.price + "</td></tr>");
+                            $(".product-container tbody").append("<tr data-product='" + item.product.code + "'><td>" + item.product.name + "<br /><a href='#' data-toggle='modal' data-target='#Modal" + item.product.code + "'>Find out more</a></td><td><ul></ul></td><td>" + productRange[item.product.low] + " - " + productRange[item.product.high] + "</td><td>" + item.product.contract + "</td><td>" + item.product.price + "</td></tr>");
 
                             for (var featureNumber = 0; featureNumber < item.product.features.length; featureNumber++) {
                                 $("tr[data-product='" + item.product.code + "'] td ul").append("<li>" + item.product.features[featureNumber] + "</li>");
