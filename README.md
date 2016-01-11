@@ -12,7 +12,7 @@ Repository containing personal projects and tools
 * http://jonbrownm.github.io/object-search/
  * HTML | CSS | AngularJS | JSON
 
-* <a http://jonbrownm.com/options-checker/?products=2725&4374&8962&9407&linereference=02084160058
+* http://jonbrownm.github.io/options-checker/?products=2725&4374&8962&9407&linereference=02084160058
  * HTML | CSS | JQuery | JSON
 
 * http://jonbrownm.github.io/sentence-tool/
