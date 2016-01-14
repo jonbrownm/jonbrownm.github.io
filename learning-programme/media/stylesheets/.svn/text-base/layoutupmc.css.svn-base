@@ -1,0 +1,1316 @@
+/*
+ * $Id: layout.css,v 1.8 2011/08/19 10:05:21 ultrasis\jonathanb Exp $
+ */
+
+/*
+ * File name: layout.css
+ *
+ * Description: Stylesheet for Health Manager
+ *
+ * reset
+ * container
+ * global
+ * buttons/links
+ * navigation
+ * content
+ * foot
+ *
+ */
+
+@media screen, print {
+
+	/********** Reset **************/
+	* {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, font, img, ins, kbd, q, s, samp,
+	small, strike, sub, tt, var,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-weight: inherit;
+		font-style: inherit;
+		font-size: 100%;
+		font-family: inherit;
+		vertical-align: baseline;
+	}
+	strong {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-style: inherit;
+		font-size: 100%;
+		font-family: inherit;
+		vertical-align: baseline;	
+	}
+	em {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		font-family: inherit;
+		vertical-align: baseline;	
+	}
+	/* remember to define focus styles! */
+	:focus {
+		outline: 0;
+	}
+	body {
+		line-height: 1;
+		color: black;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	/* tables still need 'cellspacing="0"' in the markup */
+	table {
+		border-collapse: separate;
+		border-spacing: 0;
+	}
+	input {
+    	-webkit-appearance: none;
+    	border-radius: 0;
+	}
+	caption, th, td {
+		text-align: left;
+		font-weight: normal;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: "";
+	}
+	blockquote, q {
+		quotes: "" "";
+	}
+}
+
+@media screen {
+	/* container styles
+	----------------------------------------------- */
+	
+	html {
+	background: #fff url(../images/bgupmc.jpg) no-repeat center top fixed;
+	background-size: cover;
+	}
+	
+	div#container {
+	width: 768px;
+	height: 768px;
+	margin: 0 auto;
+	}
+	
+	div#application-content {
+	position: relative;
+	}	
+	
+	div#application-content #left-overflow {
+	float: left;
+	width: 16px;
+	height: 640px;
+	background: #979797;
+	}
+	
+	div#application-content #content, div#application-content #slider {
+	width: 712px;
+	float: left;
+	margin: 0 12px 0 12px;
+	}
+	
+	div#application-content #right-overflow {
+	float: left;
+	width: 16px;
+	height: 640px;
+	background: #979797;
+	}		
+	
+	
+	/* global styles
+	----------------------------------------------- */
+	
+	body {
+	font-family: 'Droid Sans', sans-serif;
+	}
+	
+	a {
+	text-decoration: none;
+	}
+	
+	.clear {
+	clear: both;
+	}
+	
+	.float-right {
+	float: right;
+	}
+	
+	.float-left {
+	float: left;
+	}
+	
+	a.add-btn {
+	color: #742262;
+	padding: 5px;
+	font-size: 1em;
+	background: #fff;
+	margin: 10px 0 10px 0;
+	background: #fff;
+	float: left;
+	}
+	
+	a.add-btn:active {
+	color: #742262;
+	padding: 7px 5px 3px 5px;
+	font-size: 1em;
+	background: #fff;
+	margin: 10px 0 10px 0;
+	background: #fff;
+	float: left;
+	}
+	
+	.animate {
+	-webkit-animation-property: -webkit-width;
+	-webkit-transform: translateZ(0);
+  	-webkit-transition-duration: 1s;
+  	-moz-transition-duration: 1s; 
+  	-o-transition-duration: 1s;
+  	transition-duration: 1s;
+	}
+	
+	a.double {
+	color: #fff;
+	float: left;
+	width: 320px;
+	height: 121px;
+	padding: 15px;
+	}
+
+	a.single {
+	color: #fff;
+	float: left;
+	width: 139px;
+	height: 121px;
+	padding: 15px;
+	}
+	
+	a.spanner {
+	color: #fff;
+	float: left;
+	width: 320px;
+	height: 133px;
+	padding: 15px;
+	margin-bottom: 1px;
+	}
+	
+	div.full {
+	color: #fff;
+	float: left;
+	width: 682px;
+	padding: 15px;
+	margin-bottom: 1px;
+	}
+	
+	a.spanner h2, a.double h2, a.single h2 {
+	margin-bottom: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing:-.01em;
+	}
+
+	a.spanner p, a.double p, a.single p {
+	font-size: 0.9em;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin-bottom: 5px;
+	letter-spacing:-.01em;
+	}
+	
+	div.full h2 {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing:-.01em;
+	}
+	
+	div.full p {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.2em;
+	margin-bottom: 5px;
+	letter-spacing:-.01em;
+	}
+
+	a.spanner ul, a.double ul, a.single ul {
+	font-size: 0.8em;
+	margin-top: 20px;
+	line-height: 1.2em;
+	}
+
+	a.orange {
+	background: #dbb915;
+	}
+	
+	a.orange:hover {
+	background: #c4a619;
+	}
+	
+	a.blue, ul.blue li a, div.blue {
+	background: #742262;
+	}
+	
+	a.blue:hover, ul.blue li a:hover {
+	background: #491840;
+	}
+	
+	a.green, ul.green li a {
+	background: #4ac6e7;
+	}
+	
+	a.green:hover, ul.green li a:hover {
+	background: #44a7c2;
+	}
+	
+	a.pea, ul.pea li a {
+	background: #aab52b;
+	}
+	
+	a.pea:hover, ul.pea li a:hover {
+	background: #96a026;
+	}
+	
+	a.right, ul.right {
+	margin-right: 12px;
+	}
+	
+	a.bottom, ul.bottom, div.bottom {
+	margin-bottom: 12px;
+	}
+
+	/* buttons/links
+	----------------------------------------------- */
+
+
+	/* navigation styles
+	----------------------------------------------- */
+	
+	div#application-header {
+	height: 49px;
+	/* opacity: 0.5; */
+	width: 712px;
+	/* background: #fff; */
+	padding-top: 10px;
+	margin: 0 28px 0 28px;
+	}
+	
+	div#application-header h1 {
+	float:left;
+	font-size:2em;
+	font-weight:bold;
+	letter-spacing:-.05em;
+	}
+	
+	div#application-header a#home {
+	color: #666666;
+	padding-left: 25px;
+	text-shadow: 1px 1px 1px #000;
+	background: url(../images/home.png) no-repeat center left;
+	}
+	
+	div#application-header div#logout a {
+	color: #666666;
+	float: right;
+	margin-top: 13px;
+	}
+	
+	div#application-navigation {
+	height: 37px;
+	width: 768px;
+	/* opacity: 0.5; */
+	margin-top: 12px;
+	/* background: #fff; */
+	text-align:center;
+	padding-top:5px;
+	}
+		
+	/* sliding ui
+	----------------------------------------------- */
+	
+	#slider #prev {
+	left: 0;
+	top: 170px;
+	font-size:0;
+	width: 40px;
+	opacity: .3;
+	height: 100px;
+	display: block;
+	position: absolute;
+	background: #666666 url(../images/flip-prev.png) no-repeat center right;
+	}
+	
+	/* #slider #prev:hover {
+	width:70px;
+	opacity: .9;
+	} */
+	
+	#slider #next {
+	right: 0;
+	top: 170px;
+	font-size:0;
+	width: 70px;
+	opacity: .9;
+	height: 100px;
+	display: block;
+	position: absolute;
+	background: #666666 url(../images/flip-next.png) no-repeat center left;
+	}
+	
+	#slider #next.highlight {
+	right: 0;
+	top: 170px;
+	font-size:0;
+	width: 140px;
+	opacity: .9;
+	height: 100px;
+	display: block;
+	position: absolute;
+	background: #4ac6e7 url(../images/flip-next.png) no-repeat center left;
+	}
+	
+	#position em {
+	color:#fff;
+	font-size:1em;
+	background:#fff;
+	text-align:center;
+	border-radius: 30px;
+	padding:5px 10px 5px 10px;
+	background: url(../images/shadow1.png) no-repeat -1px -1px;
+	}
+	
+	#position em.on {
+	color:#ddd;
+	background: url(../images/shadow2.png) no-repeat -1px -1px;
+	}
+
+	/* dashboard
+	----------------------------------------------- */
+
+	div.dashboard a.spanner span.count, div.dashboard a.double span.count, div.dashboard a.single span.count {
+	float: right;
+	color: #742262;
+	background:#fff;
+	font-size: .8em;
+	font-weight:bold;
+	margin: -8px -8px 0 0;
+	padding:3px 5px 3px 5px;
+	}
+	
+	div.dashboard ul.links {
+	float: left;
+	}
+	
+	div.dashboard ul.links li a {
+	color: #fff;
+	height: 27px;
+	width: 335px;
+	display: block;
+	margin-bottom: 1px;
+	padding: 10px 0 0 15px;
+	}
+	
+	div.dashboard a#program {
+	width: 185px;
+	padding: 15px 150px 15px 15px;
+	background: #4ac6e7 url(../images/start-program.png) no-repeat top right;
+	}
+	
+	div.dashboard a#program:hover {
+	background: #44a7c2 url(../images/start-program.png) no-repeat top right;
+	}
+	
+	div.dashboard a#settings div#user img {
+	float: left;
+	margin-top: 10px;
+	}
+	
+	div.dashboard a#settings div#user span {
+	float: left;
+	margin: 30px 0 0 10px;
+	}
+	
+	div.dashboard a#reminders div#calendar {
+	width: 100px;
+	height: 60px;
+	float: left;
+	color: #742262;
+	margin-right: 15px;
+	padding-top: 35px;
+	font-weight: bold;
+	text-align: center;
+	background: #742262 url(../images/calendar.png) no-repeat center left;
+	}
+	
+	div.dashboard a#reminders:hover div#calendar {
+	background: #491840 url(../images/calendar.png) no-repeat center left;
+	}
+	
+	div.dashboard a#reminders div#calendar em {
+	font-size: 1.4em;
+	font-style: normal;
+	letter-spacing:-0.05em;
+	}
+	
+	div.dashboard a#reminders div#calendar ul {
+	width: 100px;
+	float: right;
+	border: solid 1px red;
+	}
+
+	/* video
+	----------------------------------------------- */
+	
+	div.video video {
+	width: 711px;
+	height: 401px;
+	background: #000;
+	}
+	
+	div.video div.full {
+	height: 197px;
+	}
+	
+	div.video div ul.character-select li {
+	float: left;
+	margin-top: 10px;
+	background: #fff;
+	margin-right: 1px;
+	}
+	
+	div.video div ul.character-select li a {
+	float: left;
+	width: 80px;
+	color: #fff;
+	height: 12px;
+	font-size: .8em;
+	background: #000;
+	font-weight: bold;
+	padding:78px 10px 10px 10px;
+	text-shadow: 1px 1px 1px #000;
+	}
+	
+	div.video div ul.character-select li a.leena {
+	opacity: 0.8;
+	background: url(../images/leena1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.leena.active, div.video div ul.character-select li a.leena.active:hover {
+	opacity: 1;
+	background: url(../images/leena2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.leena:hover {
+	opacity: 1;
+	background: url(../images/leena1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.andrew {
+	opacity: 0.8;
+	background: url(../images/andrew1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.andrew.active, div.video div ul.character-select li a.andrew.active:hover {
+	opacity: 1;
+	background: url(../images/andrew2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.andrew:hover {
+	opacity: 1;
+	background: url(../images/andrew1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.elaine {
+	opacity: 0.8;
+	background: url(../images/elaine1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.elaine.active, div.video div ul.character-select li a.elaine.active:hover {
+	opacity: 1;
+	background: url(../images/elaine2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.elaine:hover {
+	opacity: 1;
+	background: url(../images/elaine1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.rosa {
+	opacity: 0.8;
+	background: url(../images/rosa1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.rosa.active, div.video div ul.character-select li a.rosa.active:hover {
+	opacity: 1;
+	background: url(../images/rosa2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.rosa:hover {
+	opacity: 1;
+	background: url(../images/rosa1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.bob {
+	opacity: 0.8;
+	background: url(../images/bob1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.bob.active, div.video div ul.character-select li a.bob.active:hover {
+	opacity: 1;
+	background: url(../images/bob2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.bob:hover {
+	opacity: 1;
+	background: url(../images/bob1.gif) no-repeat center center;
+	}
+	
+	/* form
+	----------------------------------------------- */
+	
+	div.form form div#enjoyment {
+	height: 135px;
+	}
+	
+	div.form form div#enjoyment input#enjoyment-percentage {
+	border: 0;
+	float: right;
+	width: 85px;
+	color: #fff;
+	font-size: 2em;
+	text-align: right;
+	background: #742262;
+	font-weight: bold;
+	margin-top: -5px;
+	font-family: 'Droid Sans', sans-serif;
+	}
+	
+	div.form form div#enjoyment ul li {
+	float: left;
+	width: 31px;
+	height: 22px;
+	font-size: 1em;
+	color: #742262;
+	cursor: pointer;
+	padding-top: 7px;
+	background: #fff;
+	margin-right: 1px;
+	text-align: center;
+	border: solid 1px #fff;
+	}
+	
+	div.form form div#enjoyment ul li:hover {
+	color: #fff;
+	background: #666666;
+	}
+	
+	div.form form div#enjoyment ul li.active {
+	color: #fff;
+	background: #373737;
+	}
+	
+	div.form form div#enjoyment div#no-pleasure {
+	float: left;
+	width: 31px;
+	height: 19px;
+	font-size: 0;
+	margin-top: 5px;
+	background: url(../images/no-pleasure.png) no-repeat top left;
+	}
+	
+	div.form form div#enjoyment div#total-pleasure {
+	float: right;
+	width: 31px;
+	height: 19px;
+	font-size: 0;
+	margin-top: 5px;
+	background: url(../images/total-pleasure.png) no-repeat top right;
+	}
+	
+	div.form form div div.input input[type="text"] {
+	border: 0;
+	padding: 0;
+	float: left;
+	height: 17px;
+	width: 661px;
+	padding: 10px;
+	font-size: 16px;
+	color: #742262;
+	}
+	
+	div.form form div div.input input[type="text"].active {
+	color: #373737;
+	width: 646px;
+	padding: 10px 10px 10px 25px;
+	background: #fff url(../images/selected.png) no-repeat center left;
+	}
+				
+	div.form form div div.select input {
+	display: none;
+	}
+				
+	div.form form div div.select label {
+	float: left;
+	width: 320px;
+	padding: 10px;
+	color: #742262;
+	cursor: pointer;
+	font-size: 16px;
+	background: #fff;
+	margin: 0 1px 1px 0;
+	}
+				
+	div.form form div div.select label.active {
+	width: 305px;
+	color: #373737;
+	padding: 10px 10px 10px 25px;
+	background: #fff url(../images/selected.png) no-repeat center left;
+	}
+	
+	/* links */
+	
+	div.links div div a {
+	width: 320px;
+	color: #742262;
+	float: left;
+	padding:10px;
+	background: #fff;
+	margin: 0 1px 1px 0;
+	}
+	
+	div.links div div a.active {
+	width: 305px;
+	color: #373737;
+	padding: 10px 10px 10px 25px;
+	background: #fff url(../images/selected.png) no-repeat center left;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media
+
+only screen and (max-device-width: 600px),
+only screen and (max-width: 600px) {
+
+	
+	/* container styles
+	----------------------------------------------- */
+	
+	html {
+	background: #fff url(../images/bgupmc.jpg) no-repeat center center fixed;
+	background-size: cover;
+	}
+	
+	div#container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	}
+	
+	div#application-content {
+	margin-top: 15px;
+	position: relative;
+	}	
+	
+	div#application-content #left-overflow {
+	display: none;
+	}
+	
+	div#application-content #content, div#application-content #slider {
+	width: 92%;
+	float: none;
+	margin: 0 4% 0 4%;
+	}
+	
+	div#application-content #right-overflow {
+	display: none;
+	}		
+	
+	
+	/* global styles
+	----------------------------------------------- */
+	
+	body {
+	font-family: 'Droid Sans', sans-serif;
+	}
+	
+	a {
+	color: #fff;
+	text-decoration: none;
+	}
+	
+	.clear {
+	clear: both;
+	}
+	
+	.float-right {
+	float: right;
+	}
+	
+	.float-left {
+	float: left;
+	}
+	
+	a.add-btn {
+	color: #742262;
+	padding: 5px;
+	font-size: 1em;
+	background: #fff;
+	margin: 10px 0 10px 0;
+	background: #fff;
+	float: left;
+	}
+	
+	a.add-btn:active {
+	color: #742262;
+	padding: 7px 5px 3px 5px;
+	font-size: 1em;
+	background: #fff;
+	margin: 10px 0 10px 0;
+	background: #fff;
+	float: left;
+	}
+	
+	.animate {
+	-webkit-animation-property: -webkit-width;
+  	-webkit-transition-duration: 1s;
+  	-moz-transition-duration: 1s; 
+  	-o-transition-duration: 1s;
+	}
+	
+	a.double {
+	color: #fff;
+	float: none;
+	width: 92%;
+	height: auto;
+	display: block;
+	padding: 20px 4% 10px 4%;
+	}
+
+	a.single {
+	color: #fff;
+	float: none;
+	width: 92%;
+	height: auto;
+	display: block;
+	padding: 20px 4% 10px 4%;
+	}
+	
+	a.spanner {
+	color: #fff;
+	float: none;
+	width: 92%;
+	height: auto;
+	display: block;
+	padding: 20px 4% 10px 4%;
+	}
+	
+	div.full {
+	color: #fff;
+	float: left;
+	width: 92%;
+	padding: 15px 4% 20px 4%;
+	}
+	
+	a.spanner h2, a.double h2, a.single h2, div.full h2 {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing:-.01em;
+	}
+
+	a.spanner p, a.double p, a.single p {
+	display: none;
+	}
+	
+	div.full p {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin-bottom: 5px;
+	letter-spacing:0em;
+	}
+	
+	div.dashboard a.spanner ul, div.dashboard a.double ul, div.dashboard a.single ul {
+	display: none;
+	}	
+	
+	a.orange {
+	background: #dbb915;
+	}
+	
+	a.orange:hover {
+	background: #c4a619;
+	}
+	
+	a.blue, ul.blue li a, div.blue {
+	background: #742262;
+	}
+	
+	a.blue:hover, ul.blue li a:hover {
+	background: #491840;
+	}
+	
+	a.green, ul.green li a {
+	background: #4ac6e7;
+	}
+	
+	a.green:hover, ul.green li a:hover {
+	background: #44a7c2;
+	}
+	
+	a.pea, ul.pea li a {
+	background: #aab52b;
+	}
+	
+	a.pea:hover, ul.pea li a:hover {
+	background: #96a026;
+	}
+	
+	a.right, ul.right {
+	margin-right: 0;
+	}
+	
+	a.bottom, ul.bottom, div.bottom {
+	margin-bottom:12px;
+	}
+
+	/* buttons/links
+	----------------------------------------------- */
+
+
+	/* navigation styles
+	----------------------------------------------- */
+	
+	div#application-header {
+	height: auto;
+	/* opacity: 0.5; */
+	width: 92%;
+	/* background: #fff; */
+	padding-top: 10px;
+	margin: 0 4% 0 4%;
+	}
+	
+	div#application-header h1 {
+	float:left;
+	font-size:1.5em;
+	font-weight:bold;
+	letter-spacing:-.05em;
+	}
+	
+	div#application-header a#home {
+	color: #666666;
+	padding-left: 25px;
+	text-shadow: 1px 1px 1px #000;
+	background: url(../images/home.png) no-repeat center left;
+	}
+	
+	div#application-header div#logout a {
+	color: #666666;
+	float: left;
+	clear: both;
+	margin-top: 10px;
+	}
+	div#application-navigation {
+	height: auto;
+	width: 100%;
+	/* opacity: 0.5; */
+	margin: 12px 0 12px 0;
+	/* background: #fff; */
+	text-align:center;
+	padding-top: 0;
+	}
+		
+	/* sliding ui
+	----------------------------------------------- */
+	
+	#slider #prev {
+	left: 0;
+	top: 10%;
+	font-size:0;
+	width: 40px;
+	opacity: .3;
+	height: 100px;
+	text-indent: -999px;
+	position: absolute;
+	background: #666666 url(../images/flip-prev.png) no-repeat center right;
+	}
+	
+	#slider #prev:hover {
+	width: 40px;
+	opacity: .3;
+	}
+	
+	#slider #next {
+	right: 0;
+	top: 10%;
+	font-size:0;
+	width: 40px;
+	opacity: .3;
+	height: 100px;
+	text-indent: -999px;
+	position: absolute;
+	background: #666666 url(../images/flip-next.png) no-repeat center left;
+	}
+	
+	#slider #next.highlight {
+	right: 0;
+	top: 10%;
+	font-size:0;
+	width: 40px;
+	opacity: .9;
+	height: 100px;
+	display: block;
+	position: absolute;
+	background: #4ac6e7 url(../images/flip-next.png) no-repeat center left;
+	}
+	
+	#slider #next:hover {
+	width: 40px;
+	opacity: .3;
+	}
+	
+	#position em {
+	color:#fff;
+	font-size:.6em;
+	background:#fff;
+	text-align:center;
+	border-radius: 30px;
+	padding:1px 3px 1px 3px;
+	background: #fff;
+	}
+	
+	#position em.on {
+	color:#ddd;
+	background: #dddddd;
+	}
+
+
+	/* dashboard
+	----------------------------------------------- */
+
+	div.dashboard a.spanner span.count, div.dashboard a.double span.count, div.dashboard a.single span.count {
+	float: right;
+	color: #742262;
+	background:#fff;
+	font-size: 1.1em;
+	font-weight:bold;
+	margin: -8px -2px 0 0;
+	padding: 8px 10px 7px 10px;
+	}
+	
+	div.dashboard ul.links {
+	float: none;
+	}
+	
+	div.dashboard ul.links li a {
+	width: 92%;
+	color: #fff;
+	height: auto;
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 12px;
+	letter-spacing:-.01em;
+	padding: 20px 4% 20px 4%;
+	}
+	
+	div.dashboard a#program {
+	width: 92%;
+	height: auto;
+	display: block;
+	margin-bottom: 12px;
+	padding: 20px 4% 10px 4%;
+	background: #4ac6e7 none;
+	}
+	
+	div.dashboard a#program:hover {
+	background: #44a7c2 none;
+	}
+	
+	div.dashboard a#settings div#user img {
+	display: none;
+	}
+	
+	div.dashboard a#settings div#user span {
+	display: none;
+	}
+	
+	div.dashboard a#reminders div#calendar {
+	display: none;
+	}
+	
+	div.dashboard a#reminders:hover div#calendar {
+	background: #491840 url(../images/calendar.png) no-repeat center left;
+	}
+	
+	div.dashboard a#reminders div#calendar em {
+	font-size: 1.4em;
+	font-style: normal;
+	letter-spacing:-0.05em;
+	}
+	
+	div.dashboard a#reminders div#calendar ul {
+	display: none;
+	}
+	
+	div.dashboard a#apps {
+	margin-top: 11px;
+	}
+
+	/* video
+	----------------------------------------------- */
+	
+	div.video video {
+	width: 100%;
+	height: auto;
+	}
+	
+	div.video div.full {
+	height: auto;
+	}
+	
+	div.video div ul.character-select li {
+	margin-top: 10px;
+	margin-right: 1px;
+	}
+	
+	div.video div ul.character-select li a {
+	float: left;
+	width: 40px;
+	height: 12px;
+	font-size: .8em;
+	background: #000;
+	font-weight: bold;
+	padding:38px 5px 5px 5px;
+	text-shadow: 1px 1px 1px #000;
+	}
+	
+	div.video div ul.character-select li a.leena {
+	opacity: 0.8;
+	background: url(../images/leena1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.leena.active, div.video div ul.character-select li a.leena.active:hover {
+	opacity: 1;
+	background: url(../images/leena2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.leena:hover {
+	opacity: 1;
+	background: url(../images/leena1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.andrew {
+	opacity: 0.8;
+	background: url(../images/andrew1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.andrew.active, div.video div ul.character-select li a.andrew.active:hover {
+	opacity: 1;
+	background: url(../images/andrew2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.andrew:hover {
+	opacity: 1;
+	background: url(../images/andrew1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.elaine {
+	opacity: 0.8;
+	background: url(../images/elaine1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.elaine.active, div.video div ul.character-select li a.elaine.active:hover {
+	opacity: 1;
+	background: url(../images/elaine2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.elaine:hover {
+	opacity: 1;
+	background: url(../images/elaine1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.rosa {
+	opacity: 0.8;
+	background: url(../images/rosa1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.rosa.active, div.video div ul.character-select li a.rosa.active:hover {
+	opacity: 1;
+	background: url(../images/rosa2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.rosa:hover {
+	opacity: 1;
+	background: url(../images/rosa1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.bob {
+	opacity: 0.8;
+	background: url(../images/bob1.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.bob.active, div.video div ul.character-select li a.bob.active:hover {
+	opacity: 1;
+	background: url(../images/bob2.gif) no-repeat center center;
+	}
+	
+	div.video div ul.character-select li a.bob:hover {
+	opacity: 1;
+	background: url(../images/bob1.gif) no-repeat center center;
+	}
+	
+	/* form
+	----------------------------------------------- */
+	
+	div.form form div#enjoyment {
+	height: auto;
+	}
+	
+	div.form form div#enjoyment p {
+	display: none;
+	}
+	
+	div.form form div#enjoyment input#enjoyment-percentage {
+	border: 0;
+	float: left;
+	width: 85px;
+	color: #fff;
+	font-size: 2em;
+	text-align: left;
+	background: #742262;
+	font-weight: bold;
+	margin-top: -5px;
+	font-family: 'Droid Sans', sans-serif;
+	}
+	
+	div.form form div#enjoyment ul li {
+	border: none;
+	float: left;
+	width: 5%px;
+	height: 22px;
+	margin: 1px;
+	font-size: 1em;
+	color: #742262;
+	cursor: pointer;
+	padding-top: 9px;
+	background: #fff;
+	text-align: center;
+	}
+	
+	div.form form div#enjoyment ul li:hover {
+	color: #fff;
+	background: #666666;
+	}
+	
+	div.form form div#enjoyment ul li.active {
+	color: #fff;
+	background: #373737;
+	}
+	
+	div.form form div#enjoyment div#no-pleasure {
+	display: none;
+	}
+	
+	div.form form div#enjoyment div#total-pleasure {
+	display: none;
+	}
+	
+	div.form form div div.input input[type="text"] {
+	border: 0;
+	padding: 0;
+	float: left;
+	height: 17px;
+	width: 90%;
+	font-size: 16px;
+	color: #742262;
+	padding: 15px 4% 15px 6%;
+	}
+	
+	div.form form div div.input input[type="text"].active {
+	width: 90%;
+	color: #373737;
+	padding: 15px 4% 15px 6%;
+	background: #fff url(../images/mobile/selected.png) no-repeat center left;
+	}
+				
+	div.form form div div.select input {
+	display: none;
+	}
+				
+	div.form form div div.select label {
+	margin: 0;
+	float: left;
+	width: 90%;
+	color: #742262;
+	cursor: pointer;
+	font-size: 16px;
+	background: #fff;
+	padding: 15px 4% 15px 6%;
+	border-bottom: solid 1px #742262;
+	}
+				
+	div.form form div div.select label.active {
+	width: 90%;
+	color: #373737;
+	padding: 15px 4% 15px 6%;
+	background: #fff url(../images/mobile/selected.png) no-repeat center left;
+	}
+	
+	/* links */
+	
+	div.links div div a {
+	width: 90%;
+	color: #742262;
+	float: left;
+	padding: 15px 4% 15px 6%;
+	background: #fff;
+	margin: 0;
+	border-bottom: solid 1px #742262;
+	}
+	
+	div.links div div a.active {
+	width: 90%;
+	color: #373737;
+	padding: 15px 4% 15px 6%;
+	background: #fff url(../images/mobile/selected.png) no-repeat center left;
+	}
+
+}

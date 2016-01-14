@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8" />
+	<title>Activities - Learning Programme</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="../media/stylesheets/layout.css"  media="screen, print" />
+    <!-- <link rel="icon" type="image/png" href="../media/images/icon16.png"> -->
+    <!-- <link rel="apple-touch-icon" href="../media/images/icon57.png"> -->
+    <!-- <link rel="apple-touch-icon" sizes="72x72" href="../media/images/icon72.png"> -->
+    <!-- <link rel="apple-touch-icon" sizes="114x114" href="../media/images/icon114.png"> -->
+    <script type="text/javascript" src="../media/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="../media/javascript/swipe.library.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" media="screen, print" />
+</head>
+
+<body>
+
+<div id="container">
+	
+	<header>
+	<div id="application-header">
+		<h1><a href="../index.html" title="Return to Dashboard" class="webapp" id="home">Activities</a></h1>
+		<div id="logout"><a href="../index.html" class="webapp">Logout</a></div>
+	</div>
+	</header>
+	
+	<div class="clear"></div>
+	
+	<article>
+	<div id="application-content">
+	
+		<div id="left-overflow">&nbsp;</div>
+		
+			<div id="slider">
+				<div>
+					
+					<section>
+					<div class="video">
+					
+						<div class="full bottom blue">
+							<h2>Introduction</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus nisi sit amet nunc pellentesque, eu rutrum felis maximus. Nullam rhoncus, velit a cursus ultrices, sapien dolor facilisis nibh, nec blandit lacus dolor et orci. Maecenas vel volutpat tellus.</p>
+							<p>Click play to watch the video below.</p>
+						</div>
+						
+						<video id="introduction" controls="controls">
+							<source src="../media/video/animation.mp4" type="video/mp4" />
+							<source src="../media/video/animation.ogg" type="video/ogg" />
+						</video>
+
+					</div>
+					</section>
+					
+					<section>
+					<div class="audio links">
+						
+						<!-- start:select-activities-number -->
+						<div class="full bottom blue">
+							
+							<h2>How many activities things did you do last week?</h2>
+							
+							<div id="pleasurable-things">
+								<a href="#" class="animate" data-audio="pt1">None</a>
+								<a href="#" class="animate" data-audio="pt2">1</a>
+								<a href="#" class="animate" data-audio="pt3">2 to 4</a>
+								<a href="#" class="animate" data-audio="pt4">More than 4</a>
+							</div>
+							
+						</div>
+						<!-- end:select-activities-number -->
+						
+						<!-- start:audio -->
+						<audio id="pt1">
+							<source src="../media/audio/response.ogg" type="audio/ogg" />
+							<source src="../media/audio/response.mp4" type="audio/mp4" />
+							<source src="../media/audio/response.mp3" type="audio/mp3" />
+						</audio>
+						
+						<audio id="pt2">
+							<source src="../media/audio/response.ogg" type="audio/ogg" />
+							<source src="../media/audio/response.mp4" type="audio/mp4" />
+							<source src="../media/audio/response.mp3" type="audio/mp3" />
+						</audio>
+						
+						<audio id="pt3">
+							<source src="../media/audio/response.ogg" type="audio/ogg" />
+							<source src="../media/audio/response.mp4" type="audio/mp4" />
+							<source src="../media/audio/response.mp3" type="audio/mp3" />
+						</audio>
+						
+						<audio id="pt4">
+							<source src="../media/audio/response.ogg" type="audio/ogg" />
+							<source src="../media/audio/response.mp4" type="audio/mp4" />
+							<source src="../media/audio/response.mp3" type="audio/mp3" />
+						</audio>
+						<!-- end:audio -->
+
+					</div>
+					</section>
+					
+					<section>
+					<div class="video" id="example-videos">
+					
+						<div class="full bottom blue">
+							<h2>Example Activities</h2>
+							<p>Take a look at some of the example activities to help you get started.</p>
+							<p>Click on a photo below to see a video.</p>
+							
+							<ul class="character-select">
+								<li><a href="#elaine" data-video="elaine" title="Watch example one" class="elaine active animate">One</a></li>
+								<li><a href="#leena" data-video="leena" title="Watch example two" class="leena animate">Two</a></li>
+								<li><a href="#andrew" data-video="andrew" title="Watch example three" class="andrew animate">Three</a></li>
+								<li><a href="#rosa" data-video="rosa" title="Watch example four" class="rosa animate">Four</a></li>
+								<li><a href="#heather" data-video="heather" title="Watch example five" class="heather animate">Five</a></li>
+							</ul>
+							
+							<div class="clear"></div>
+						</div>
+
+						<video id="elaine" controls="controls">
+							<source src="../media/video/animation.mp4" type="video/mp4" data-video="mp4" />
+							<source src="../media/video/animation.ogg" type="video/ogg" data-video="ogg" />
+						</video>
+						
+						<video id="leena" controls="controls">
+							<source src="../media/video/animation.mp4" type="video/mp4" data-video="mp4" />
+							<source src="../media/video/animation.ogg" type="video/ogg" data-video="ogg" />
+						</video>
+						
+						<video id="andrew" controls="controls">
+							<source src="../media/video/animation.mp4" type="video/mp4" data-video="mp4" />
+							<source src="../media/video/animation.ogg" type="video/ogg" data-video="ogg" />
+						</video>
+						
+						<video id="rosa" controls="controls">
+							<source src="../media/video/animation.mp4" type="video/mp4" data-video="mp4" />
+							<source src="../media/video/animation.ogg" type="video/ogg" data-video="ogg" />
+						</video>
+						 
+						<video id="heather" controls="controls">
+							<source src="../media/video/animation.mp4" type="video/mp4" data-video="mp4" />
+							<source src="../media/video/animation.ogg" type="video/ogg" data-video="ogg" />
+						</video>
+
+					</div>
+					</section>
+					
+					<section>
+					<div class="form">
+						
+						<form>
+						
+						<!-- start:select activity -->
+						<div class="full bottom blue" id="activity">
+							
+							<h2>What activity will you do?</h2>
+							
+							<div class="select">
+								<input type="radio" name="activity" value="swimming" />
+								<label class="animate" data-activity="go swimming">Go swimming</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="activity" value="friends" />
+								<label class="animate" data-activity="spend time with friends">Spend time with friends</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="activity" value="television" />
+								<label class="animate" data-activity="watch some television">Watch some television</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="activity" value="book" />
+								<label class="animate" data-activity="read a book">Read a book</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="activity" value="shops" />
+								<label class="animate" data-activity="go to the shops">Go to the shops</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="activity" value="gardening" />
+								<label class="animate" data-activity="do some gardening">Do some gardening</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="activity" value="walk" />
+								<label class="animate" data-activity="go for a walk">Go for a walk</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="activity" value="drive" />
+								<label class="animate" data-activity="go out for a drive">Go out for a drive</label>
+							</div>
+							
+							<div class="input">
+								<input type="text" name="activity" placeholder="or do someting else ..." id="custom" />
+							</div>
+							
+						</div>
+						<!-- end:select activity -->
+						
+						<!-- start:select day -->
+						<div class="full bottom blue" id="day">
+							
+							<h2>Which day will you do your activity this week?</h2>
+							
+							<div class="select">
+								<input type="radio" name="day" value="monday" />
+								<label class="animate" data-day="Monday">Monday</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="day" value="tuesday" />
+								<label class="animate" data-day="Tuesday">Tuesday</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="day" value="wednesday" />
+								<label class="animate" data-day="Wednesday">Wednesday</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="day" value="thursday" />
+								<label class="animate" data-day="Thursday">Thursday</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="day" value="friday" />
+								<label class="animate" data-day="Friday">Friday</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="day" value="saturday" />
+								<label class="animate" data-day="Saturday">Saturday</label>
+							</div>
+							
+							<div class="select">
+								<input type="radio" name="day" value="sunday" />
+								<label class="animate" data-day="Sunday">Sunday</label>
+							</div>
+							
+						</div>
+						<!-- end:select day -->
+						
+						<!-- start:select completion -->
+						<div class="full bottom blue" id="enjoyment">
+							
+							<h2>How much of your activity will you complete?</h2>
+							
+							<input type="text" id="enjoyment-percentage" value="0%" />
+							
+							<p>Select a point to indicate how much you think you'll enjoy the activity.</p>
+
+							<div class="clear"></div>
+
+							<ul>
+								<li class="animate" data-percentage="5%">5</li>
+								<li class="animate" data-percentage="10%">10</li>
+								<li class="animate" data-percentage="15%">15</li>
+								<li class="animate" data-percentage="20%">20</li>
+								<li class="animate" data-percentage="25%">25</li>
+								<li class="animate" data-percentage="30%">30</li>
+								<li class="animate" data-percentage="35%">35</li>
+								<li class="animate" data-percentage="40%">40</li>
+								<li class="animate" data-percentage="45%">45</li>
+								<li class="animate" data-percentage="50%">50</li>
+								<li class="animate" data-percentage="55%">55</li>
+								<li class="animate" data-percentage="60%">60</li>
+								<li class="animate" data-percentage="65%">65</li>
+								<li class="animate" data-percentage="70%">70</li>
+								<li class="animate" data-percentage="75%">75</li>
+								<li class="animate" data-percentage="80%">80</li>
+								<li class="animate" data-percentage="85%">85</li>
+								<li class="animate" data-percentage="90%">90</li>
+								<li class="animate" data-percentage="95%">95</li>
+								<li class="animate" data-percentage="100%">100</li>
+							</ul>
+							
+							<div class="clear"></div>
+							
+							<div id="no-pleasure">No pleasure</div>
+							<div id="total-pleasure">Total pleasure</div>
+							
+							<div class="clear"></div>
+
+						</div>
+						<!-- end:select completion -->
+						
+						</form>
+
+					</div>
+					</section>
+					
+					<section>
+					<div class="complete">
+					
+						<div class="full bottom blue">
+							<h2>Well Done!</h2>
+							<p>You have completed the Activities module.</p>
+							<div id="results">
+								<p>You chose to <span class="activity">&nbsp;</span> on <span class="day">&nbsp;</span>. You think that you'll complete up to <span class="percentage">&nbsp;</span>.</p>
+								<p><a href="#" class="add-btn" id="add-calendar">Add this to my calendar</a></p>
+							</div>
+							<div class="clear"></div>
+							<p>When you come back we'll have a look at your answers and compare them to what you actually acheived.</p>
+						</div>
+
+					</div>
+					</section>
+
+				</div>
+				
+				<a href="#" class="animate" id="prev">Previous</a>
+				<a href="#" class="animate" id="next">Next</a>
+					
+			</div>
+		
+		<div id="right-overflow">&nbsp;</div>
+	
+	</div>
+	</article>
+	
+	<div class="clear"></div>
+	
+	<div id="application-navigation">
+		
+		<span id="position">
+			<em class="0 on">1</em>
+			<em class="1">2</em>
+			<em class="2">3</em>
+			<em class="3">4</em>
+			<em class="4">5</em>
+		</span>
+		
+	</div>
+
+</div>
+
+<script type="text/javascript" src="../media/javascript/library.js?version=100"></script>
+<script type="text/javascript">examples();tool();audio();</script>
+
+<script type="text/javascript">
+	if ((navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPhone/i))) {
+		$("a.webapp").click(function (event) {
+		    event.preventDefault();
+		    window.location = $(this).attr("href");
+		});
+	}
+</script>
+
+</body>
+</html>
