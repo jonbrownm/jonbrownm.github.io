@@ -13,7 +13,6 @@
 	$(document).ready(function() {
 		setDialog();
 		responsiveNav();
-		datePicker();
 		revealPanel();
 	});
 	
@@ -35,50 +34,11 @@
 /* ################## END:1. TRIGGERS ################## */
 
 
-/* ################## END:2. FORMS ################## */		
-
-	/* date-picker */
-	function datePicker() {
-		if (!Modernizr.inputtypes.date) {
-			$("#add-user-dob").datepicker({
-				showAnim: 'fadeIn',
-				maxDate: "-18Y",
-				changeMonth: true,
-				changeYear: true,
-				dateFormat: "mm/dd/yy"
-			});
-		}
-	}
-
-	/* multi-select */
-	$("div table[data-function='multiselect'] tbody tr").click(function() {  
-		var checkbox = $(this).find("td input:checkbox"); 
-		if ($(this).hasClass("selected")) {
-			$(this).removeClass("selected");
-			checkbox.prop("checked", false);
-		}
-		else {
-	        $(this).addClass("selected");
-	        checkbox.prop("checked", true);
-		}
-	});
-	
-	/* radio-button */
-	$("div[data-input='radio'] input[type='radio']").click(function() {
-		$(this).parent().parent().children("label").removeClass("checked");
-		if ($(this).parent().hasClass("checked")) {
-			$(this).parent().removeClass("checked")
-		} else {
-			$(this).parent().addClass("checked");
-		};
-	});
-
-/* ################## END:2. FORMS ################## */
 
 	
 /* ################## START:3. DATA ################## */	
 
-	/* search */
+	/* search functionality */
 	$("input.search").keyup(function(){ 
 		var type = $(this).data("type");
 		$("table[data-type='" + type + "'] tbody tr").css("display", "");
@@ -112,7 +72,7 @@
 		$("div.tabs div:not(.default)").hide();
 	}
 
-	/* shows/hides tabs */
+	/* shows tabs */
 	$("div.tabs ul li a").click(function(event) {
 		event.preventDefault();
 		var type = $(this).data("type");
@@ -193,58 +153,61 @@
 
 /* ################## START:7. ACTIONS ################## */
 	
-	/* add user */
-	
-	/* open dialog */
+	//
+	// Function - add user
+	//
+
+	// Open dialog
 	$("#button-add-user").click(function() {
 		$("#dialog-add-user form")[0].reset();
 		$("#dialog-add-user").dialog("open");
 	});
 	
-	/* ok */
+	// Submit
 	$("#dialog-add-user form fieldset.actions input[type='submit']").click(function(event) {
 		event.preventDefault();
-		var firstname = $("#dialog-add-user form fieldset #add-firstname").val(); 
-		var lastname = $("#dialog-add-user form fieldset #add-lastname").val(); 
-		var email = $("#dialog-add-user form fieldset #add-email").val(); 
 	});
 	
-	/* cancel */
+	// Cancel
 	$("#dialog-add-user form fieldset.actions input[type='reset']").click(function() {
 		$("#dialog-add-user").dialog("close");
 	});
 	
 
-	/* delete user*/
+	//
+	// Function - delete user
+	//
 	
-	/* open dialog */
+	// Open dialog
 	$("div.tabs[data-type='users'] div[data-type='self']").on("click","#button-delete-user", function(event) {
 		event.preventDefault();
 		$("#dialog-delete-user").dialog("open");
 	});
 	
-	/* ok */
+	// Submit
 	$("#dialog-delete-user form fieldset.actions input[type='submit']").click(function(event) {
 		event.preventDefault();
 	});
 	
-	/* cancel */
+	// Cancel
 	$("#dialog-delete-user form fieldset.actions input[type='reset']").click(function() {
 		$("#dialog-delete-user").dialog("close");
 	});
 
 
-	/* update user */
+	//
+	// Function - save user
+	//
 	
-	/* ok */
+	// Submit
 	$("div.tabs[data-type='users'] div[data-type='self']").on("click","#button-save-user", function(event) {	
 		event.preventDefault();
-		var firstname = $("#update-firstname").val(); 
-		var lastname = $("#update-lastname").val(); 
-		var email = $("#update-email").val(); 
 	});
 	
-	/* get user */
+	
+	//
+	// Function - get user
+	//
 	
 	$(document).on("click","table[data-type='users'] tbody tr", function() {
 		$("table[data-type='users'] tbody tr").removeClass("selected");
@@ -258,15 +221,15 @@
 		$("div.tabs[data-type='users'] div[data-type='self'] form").append("<fieldset class='actions'><button id='button-save-user' class='btn-primary'>Save Changes</button><button id='button-delete-user' class='btn-secondary'>Delete User</button></fieldset>");
 
 		/* account */
-		$("div.tabs[data-type='users'] div[data-type='account']").append("<ul><li><strong>Account Name</strong></li><li>Description</li></ul>");
+		$("div.tabs[data-type='users'] div[data-type='account']").append("<ul><li><strong>Account Name</strong></li><li>This is a short description of this account</li></ul>");
 		$("div.tabs[data-type='users'] div[data-type='account']").append("<fieldset class='actions'><button id='button-change-accounts' class='btn-primary'>Add or Remove Accounts</button></fieldset>")
 
 		/* courses */
-		$("div.tabs[data-type='users'] div[data-type='courses']").append("<ul><li><strong>Course Name</strong></li><li>Description</li></ul>");
+		$("div.tabs[data-type='users'] div[data-type='courses']").append("<ul><li><strong>Course Name</strong></li><li>This is a short description of this course</li></ul>");
 		$("div.tabs[data-type='users'] div[data-type='courses']").append("<fieldset class='actions'><button id='button-change-courses' class='btn-primary'>Add or Remove Courses</button></fieldset>");
 
 		/* groups */
-		$("div.tabs[data-type='users'] div[data-type='groups']").append("<ul><li><strong>Group Name</strong></li><li>Description</li></ul>");
+		$("div.tabs[data-type='users'] div[data-type='groups']").append("<ul><li><strong>Group Name</strong></li><li>This is a short description of this group</li></ul>");
 		$("div.tabs[data-type='users'] div[data-type='groups']").append("<fieldset class='actions'><button id='button-change-groups' class='btn-primary'>Add or Remove Groups</button></fieldset>");
 		
 	});
