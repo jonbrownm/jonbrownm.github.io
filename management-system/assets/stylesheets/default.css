@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+
+.required{
+	font-weight: bold;
+}
+
+fieldset div.error p.error{
+	color: red;
+}
