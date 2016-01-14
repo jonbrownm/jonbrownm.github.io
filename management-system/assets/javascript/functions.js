@@ -1,44 +1,26 @@
-/* 1. Triggers */
-/* 2. Forms */
-/* 3. Data */
-/* 4. Tabs */
-/* 5. Dialog */
-/* 6. Responsive Layout */
-/* 7. Actions */
 
+	//
+	// Triggers
+	//
 
-/* ################## START:1. TRIGGERS ################## */
-
-	/* document load */
+	// Document load
 	$(document).ready(function() {
 		setDialog();
 		responsiveNav();
 		revealPanel();
 	});
 	
-	/* window resize */
+	// Window resize
 	$(window).resize(function() {
 		setDialog();
 		responsiveNav();
 	});
-
-	/* ajax loading */
-	$(document).ajaxStart(function(){
-		$("#ajax").show();
-	}).ajaxSuccess(function(){
-		$("#ajax").fadeOut(1000);
-	}).ajaxError(function(){
-		alert("Error with AJAX request data returned.");
-	});	
 	
-/* ################## END:1. TRIGGERS ################## */
 
+	//
+	// Function - search users
+	//
 
-
-	
-/* ################## START:3. DATA ################## */	
-
-	/* search functionality */
 	$("input.search").keyup(function(){ 
 		var type = $(this).data("type");
 		$("table[data-type='" + type + "'] tbody tr").css("display", "");
@@ -56,12 +38,11 @@
 		}
 	});
 	
-/* ################## END:3. DATA ################## */		
 
-	
-/* ################## START:4. TABS ################## */	
+	//
+	// Function - create reveal panel
+	//
 
-	/* sets panel slider */
 	function revealPanel() {
 		$("div.resizeable").resizable({
 	        handles: "s",
@@ -72,7 +53,11 @@
 		$("div.tabs div:not(.default)").hide();
 	}
 
-	/* shows tabs */
+
+	//
+	// Function - reveal tabs
+	//
+
 	$("div.tabs ul li a").click(function(event) {
 		event.preventDefault();
 		var type = $(this).data("type");
@@ -88,10 +73,10 @@
 		}
 	});
 
-/* ################## END:4. TABS ################## */
 
-	
-/* ################## START:5. DIALOG ################## */	
+	//
+	// Function - create dialog
+	//
 	
 	function setDialog() {
 		var xsize = ($(window).width())/100;
@@ -118,12 +103,11 @@
 		});	
 	}
 
-/* ################## END:5. DIALOG ################## */
-	
 
-/* ################## START:6. RESPONSIVE-LAYOUT ################## */
+	//
+	// Function - hides responsive nav
+	//
 
-	/* shows/hides navigation - screen size */
 	function responsiveNav() {
 		if ($(window).width() > 550) {
 			$("nav#navigation ul.primary").css("opacity",1).show();
@@ -137,7 +121,11 @@
 		}
 	}
 	
-	/* shows/hides navigation - button */
+
+	//
+	// Function - shows responsive button
+	//
+
 	$("li#responsive-navigation a").click(function(event) {
 		event.preventDefault();	
 		if ($("nav#navigation ul.primary").is(":hidden")) {
@@ -148,10 +136,6 @@
 		}
 	});
 
-/* ################## START:6. RESPONSIVE-LAYOUT ################## */
-
-
-/* ################## START:7. ACTIONS ################## */
 	
 	//
 	// Function - add user
@@ -212,23 +196,29 @@
 	$(document).on("click","table[data-type='users'] tbody tr", function() {
 		$("table[data-type='users'] tbody tr").removeClass("selected");
 		$(this).toggleClass("selected");
+
+		selectedUserId = $(this).attr('data-user-id')
+		selectedFirstName = $("tr[data-user-id='" + selectedUserId + "'] td:first").text();
+		selectedLastName = $("tr[data-user-id='" + selectedUserId + "'] td:nth-child(2)").text();
+		selectedEmail = $("tr[data-user-id='" + selectedUserId + "'] td:nth-child(3)").text();
+
 		$("div.tabs[data-type='users'] div").empty()
 		
-		/* profile */
+		// Profile
 		$("div.tabs[data-type='users'] div[data-type='self']").append("<form></form>");
-		$("div.tabs[data-type='users'] div[data-type='self'] form").append("<fieldset class='data1'><div><label>First Name:</label><input type='text' id='update-firstname' value='First Name' required /></div><div><label>Last Name:</label><input type='text' id='update-lastname' value='sadf' required /></div><div><label>Email:</label><input type='email' id='update-email' value='Email' maxlength='256' required /></div></fieldset>");
-		$("div.tabs[data-type='users'] div[data-type='self'] form").append("<fieldset class='data2'><div><label>Enabled:</label><input type='text' value='True' disabled /></div><div><label>ID User:</label><input type='text' value='111010' disabled /></div></fieldset>");
+		$("div.tabs[data-type='users'] div[data-type='self'] form").append("<fieldset class='data1'><div><label>First Name:</label><input type='text' id='update-firstname' value='" + selectedFirstName + "' required /></div><div><label>Last Name:</label><input type='text' id='update-lastname' value='" + selectedLastName + "' required /></div><div><label>Email:</label><input type='email' id='update-email' value='" + selectedEmail + "' maxlength='256' required /></div></fieldset>");
+		$("div.tabs[data-type='users'] div[data-type='self'] form").append("<fieldset class='data2'><div><label>Enabled:</label><input type='text' value='True' disabled /></div><div><label>ID User:</label><input type='text' value='" + selectedUserId + "' disabled /></div></fieldset>");
 		$("div.tabs[data-type='users'] div[data-type='self'] form").append("<fieldset class='actions'><button id='button-save-user' class='btn-primary'>Save Changes</button><button id='button-delete-user' class='btn-secondary'>Delete User</button></fieldset>");
 
-		/* account */
+		// Account
 		$("div.tabs[data-type='users'] div[data-type='account']").append("<ul><li><strong>Account Name</strong></li><li>This is a short description of this account</li></ul>");
 		$("div.tabs[data-type='users'] div[data-type='account']").append("<fieldset class='actions'><button id='button-change-accounts' class='btn-primary'>Add or Remove Accounts</button></fieldset>")
 
-		/* courses */
+		// Courses
 		$("div.tabs[data-type='users'] div[data-type='courses']").append("<ul><li><strong>Course Name</strong></li><li>This is a short description of this course</li></ul>");
 		$("div.tabs[data-type='users'] div[data-type='courses']").append("<fieldset class='actions'><button id='button-change-courses' class='btn-primary'>Add or Remove Courses</button></fieldset>");
 
-		/* groups */
+		// Groups
 		$("div.tabs[data-type='users'] div[data-type='groups']").append("<ul><li><strong>Group Name</strong></li><li>This is a short description of this group</li></ul>");
 		$("div.tabs[data-type='users'] div[data-type='groups']").append("<fieldset class='actions'><button id='button-change-groups' class='btn-primary'>Add or Remove Groups</button></fieldset>");
 		
