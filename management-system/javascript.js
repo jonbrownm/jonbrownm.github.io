@@ -26,6 +26,10 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 	$("table[data-type='users'] tbody tr").removeClass("active");
 	$(this).toggleClass("active");
 
+	$("div.tab-pane[data-type='accounts'] ul").empty();
+	$("div.tab-pane[data-type='courses'] ul").empty();
+	$("div.tab-pane[data-type='groups'] ul").empty();
+
 	$("a[href='#details']").tab("show");
 
 	selectedUserId = $(this).attr('data-user-id');
@@ -45,12 +49,27 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 	$("div.tab-pane[data-type='details'] input#user-id").val(selectedUserId);
 
 	// Accounts
-	$("div.tab-pane[data-type='accounts'] input#account-name").val(selectedAccounts);
-
+	if (selectedAccounts != "") {
+		var selectedAccount = selectedAccounts.split(',');
+		$.each( selectedAccount, function( key, value ) {
+			$("div.tab-pane[data-type='accounts'] ul").append("<li>Generic account " + value + "</li>");
+		});
+	}
+	
 	// Courses
-	$("div.tab-pane[data-type='courses'] input#course-name").val(selectedCourses);
+	if (selectedCourses != "") {
+		var selectedCourse = selectedCourses.split(',');
+		$.each( selectedCourse, function( key, value ) {
+			$("div.tab-pane[data-type='courses'] ul").append("<li>Generic course " + value + "</li>");
+		});
+	}
 
 	// Groups
-	$("div.tab-pane[data-type='groups'] input#group-name").val(selectedGroups);
+	if (selectedGroups != "") {
+		var selectedGroup = selectedGroups.split(',');
+		$.each( selectedGroup, function( key, value ) {
+			$("div.tab-pane[data-type='groups'] ul").append("<li>Generic group " + value + "</li>");
+		});
+	}
 		
 });
