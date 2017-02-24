@@ -1,3 +1,35 @@
+
+$(document).ready(function() {
+
+	$.ajax({
+        
+        url: "assets/javascript/users.json",
+        async: true,
+        dataType: "json",
+        success: function (allAccounts) {
+
+            $.each(allAccounts.accounts,function(i, account){
+
+                $("div.cmp-user-list table tbody").append("<tr data-user-id='" + account.id + "'><td>" + account.name + "</td><td>" + account.surname + "</td><td>" + account.email + "</td></tr>");
+
+                $.each(account.users, function(index, user){
+
+                    //$("ul").append("<li>" + user.name + user.category + "</li>");
+                    $("tr[data-user-id='" + account.id + "']").attr('data-accounts', '1,2,3').attr('data-courses', '1,2,3').attr('data-groups', '1,2,3');
+
+                })
+
+            });
+
+        }
+
+    })
+
+});
+
+
+
+
 $("input[type='search']").keyup(function(){ 
 		
 	var type = $(this).data("type");
