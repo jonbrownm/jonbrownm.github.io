@@ -1,6 +1,6 @@
 .container {
 	margin-top: 10px;
-	margin-bottom: 300px;
+	margin-bottom: 10px;
 }
 
 .cmp-user-list {
@@ -18,4 +18,13 @@
 
 .cmp-user-list tbody tr {
 	cursor: pointer;
+}
+
+.cmp-user-data .nav-tabs {
+	margin: 20px 0 0 0 !important;
+}
+
+.cmp-user-data .tab-pane {
+	padding-top: 20px;
+	min-height: 300px;
 }
