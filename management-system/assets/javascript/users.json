@@ -5,6 +5,15 @@
          "name":"Carey",
          "surname":"Montoya",
          "email":"carey.montoya@undefined.io",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -21,6 +30,15 @@
          "name":"Vance",
          "surname":"Craft",
          "email":"vance.craft@undefined.co.uk",
+         "accounts":[
+            1,2,3
+         ],
+         "courses":[
+            1,2,3,4
+         ],
+         "groups":[
+            1,2
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -37,6 +55,15 @@
          "name":"Ora",
          "surname":"Sloan",
          "email":"ora.sloan@undefined.info",
+         "accounts":[
+            1,2
+         ],
+         "courses":[
+            1,2
+         ],
+         "groups":[
+            1,2
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -53,6 +80,15 @@
          "name":"Alexandria",
          "surname":"Holt",
          "email":"alexandria.holt@undefined.biz",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -69,6 +105,15 @@
          "name":"Maxine",
          "surname":"Raymond",
          "email":"maxine.raymond@undefined.us",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -85,6 +130,15 @@
          "name":"Abigail",
          "surname":"Barrera",
          "email":"abigail.barrera@undefined.ca",
+         "accounts":[
+            1
+         ],
+         "courses":[
+            1,2
+         ],
+         "groups":[
+            1,2
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -101,6 +155,15 @@
          "name":"Eliza",
          "surname":"Griffith",
          "email":"eliza.griffith@undefined.tv",
+         "accounts":[
+            1,2
+         ],
+         "courses":[
+            1,2
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -117,6 +180,15 @@
          "name":"Cummings",
          "surname":"Rodriquez",
          "email":"cummings.rodriquez@undefined.me",
+         "accounts":[
+            1
+         ],
+         "courses":[
+            1
+         ],
+         "groups":[
+            1
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -133,6 +205,15 @@
          "name":"Jerry",
          "surname":"Kennedy",
          "email":"jerry.kennedy@undefined.com",
+         "accounts":[
+            1,2,3
+         ],
+         "courses":[
+            1,2,3,4
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -142,13 +223,21 @@
                "name":"John",
                "category":"Work"
             }
-         ]
-      },
+         ]      },
       {  
          "id":10,
          "name":"Melba",
          "surname":"Ramsey",
          "email":"melba.ramsey@undefined.org",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -165,6 +254,15 @@
          "name":"Lindsey",
          "surname":"Ashley",
          "email":"lindsey.ashley@undefined.net",
+         "accounts":[
+            1,2
+         ],
+         "courses":[
+            1,2
+         ],
+         "groups":[
+            1
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -181,6 +279,15 @@
          "name":"Cherie",
          "surname":"Silva",
          "email":"cherie.silva@undefined.biz",
+         "accounts":[
+            1,2
+         ],
+         "courses":[
+            1,2
+         ],
+         "groups":[
+            1
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -197,6 +304,15 @@
          "name":"Erika",
          "surname":"Patton",
          "email":"erika.patton@undefined.io",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -213,6 +329,15 @@
          "name":"Dionne",
          "surname":"Robles",
          "email":"dionne.robles@undefined.co.uk",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -229,6 +354,15 @@
          "name":"Tammie",
          "surname":"Hunt",
          "email":"tammie.hunt@undefined.info",
+         "accounts":[
+            1
+         ],
+         "courses":[
+            1
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -245,6 +379,15 @@
          "name":"Elma",
          "surname":"Nolan",
          "email":"elma.nolan@undefined.biz",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -261,6 +404,15 @@
          "name":"Valentine",
          "surname":"Noel",
          "email":"valentine.noel@undefined.us",
+         "accounts":[
+            1,2
+         ],
+         "courses":[
+            1,2,3,4
+         ],
+         "groups":[
+            1,2
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -277,6 +429,15 @@
          "name":"Aguirre",
          "surname":"Hatfield",
          "email":"aguirre.hatfield@undefined.ca",
+         "accounts":[
+            1,2,3
+         ],
+         "courses":[
+            1,2,3
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -293,6 +454,15 @@
          "name":"Alma",
          "surname":"Wolf",
          "email":"alma.wolf@undefined.tv",
+         "accounts":[
+            1,2,3
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -309,6 +479,15 @@
          "name":"Haney",
          "surname":"Scott",
          "email":"haney.scott@undefined.me",
+         "accounts":[
+            1,2
+         ],
+         "courses":[
+            1
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -325,6 +504,15 @@
          "name":"Stevenson",
          "surname":"Santiago",
          "email":"stevenson.santiago@undefined.com",
+         "accounts":[
+            1,2
+         ],
+         "courses":[
+            1,2
+         ],
+         "groups":[
+            1
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -341,6 +529,15 @@
          "name":"Frank",
          "surname":"Edwards",
          "email":"frank.edwards@undefined.org",
+         "accounts":[
+            1,2,3
+         ],
+         "courses":[
+            1
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -357,6 +554,15 @@
          "name":"Barber",
          "surname":"Sweet",
          "email":"barber.sweet@undefined.net",
+         "accounts":[
+            1
+         ],
+         "courses":[
+            1,2,3
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -373,6 +579,15 @@
          "name":"Kari",
          "surname":"Johnson",
          "email":"kari.johnson@undefined.biz",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -389,6 +604,15 @@
          "name":"Lola",
          "surname":"Bolton",
          "email":"lola.bolton@undefined.io",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -405,6 +629,15 @@
          "name":"Alfreda",
          "surname":"Le",
          "email":"alfreda.le@undefined.co.uk",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -421,6 +654,15 @@
          "name":"Felicia",
          "surname":"Tyler",
          "email":"felicia.tyler@undefined.info",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -437,6 +679,15 @@
          "name":"Melisa",
          "surname":"Sargent",
          "email":"melisa.sargent@undefined.biz",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -453,6 +704,15 @@
          "name":"Young",
          "surname":"Long",
          "email":"young.long@undefined.us",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -469,6 +729,15 @@
          "name":"Sarah",
          "surname":"Salinas",
          "email":"sarah.salinas@undefined.ca",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -485,6 +754,15 @@
          "name":"Dickerson",
          "surname":"Witt",
          "email":"dickerson.witt@undefined.tv",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -501,6 +779,15 @@
          "name":"Bettie",
          "surname":"Small",
          "email":"bettie.small@undefined.me",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -517,6 +804,15 @@
          "name":"Nannie",
          "surname":"Mcintosh",
          "email":"nannie.mcintosh@undefined.com",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -533,6 +829,15 @@
          "name":"Pat",
          "surname":"Summers",
          "email":"pat.summers@undefined.org",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -549,6 +854,15 @@
          "name":"Chaney",
          "surname":"Hopper",
          "email":"chaney.hopper@undefined.net",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -565,6 +879,15 @@
          "name":"Claudia",
          "surname":"Mccullough",
          "email":"claudia.mccullough@undefined.biz",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -581,6 +904,15 @@
          "name":"Pacheco",
          "surname":"Garza",
          "email":"pacheco.garza@undefined.io",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -597,6 +929,15 @@
          "name":"Warren",
          "surname":"Reilly",
          "email":"warren.reilly@undefined.co.uk",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -613,6 +954,15 @@
          "name":"Stanley",
          "surname":"Benson",
          "email":"stanley.benson@undefined.info",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -629,6 +979,15 @@
          "name":"Liza",
          "surname":"Sparks",
          "email":"liza.sparks@undefined.biz",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -645,6 +1004,15 @@
          "name":"Paul",
          "surname":"Preston",
          "email":"paul.preston@undefined.us",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -661,6 +1029,15 @@
          "name":"Hicks",
          "surname":"Dillon",
          "email":"hicks.dillon@undefined.ca",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -677,6 +1054,15 @@
          "name":"Hawkins",
          "surname":"Frederick",
          "email":"hawkins.frederick@undefined.tv",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -693,6 +1079,15 @@
          "name":"Rebecca",
          "surname":"Cooper",
          "email":"rebecca.cooper@undefined.me",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -709,6 +1104,15 @@
          "name":"Francisca",
          "surname":"Martin",
          "email":"francisca.martin@undefined.com",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -725,6 +1129,15 @@
          "name":"Shields",
          "surname":"Kaufman",
          "email":"shields.kaufman@undefined.org",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -741,6 +1154,15 @@
          "name":"Rhoda",
          "surname":"Dale",
          "email":"rhoda.dale@undefined.net",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -757,6 +1179,15 @@
          "name":"Della",
          "surname":"Kemp",
          "email":"della.kemp@undefined.biz",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -773,6 +1204,15 @@
          "name":"Grimes",
          "surname":"Justice",
          "email":"grimes.justice@undefined.io",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",
@@ -789,6 +1229,15 @@
          "name":"Savannah",
          "surname":"Chapman",
          "email":"savannah.chapman@undefined.co.uk",
+         "accounts":[
+            1,2,3,4
+         ],
+         "courses":[
+            1,2,3,4,5
+         ],
+         "groups":[
+            1,2,3
+         ],
          "users":[  
             {  
                "name":"Steve",

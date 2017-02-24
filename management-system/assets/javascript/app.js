@@ -12,12 +12,13 @@ $(document).ready(function() {
 
                 $("div.cmp-user-list table tbody").append("<tr data-user-id='" + account.id + "'><td>" + account.name + "</td><td>" + account.surname + "</td><td>" + account.email + "</td></tr>");
 
-                $.each(account.users, function(index, user){
+                	$("tr[data-user-id='" + account.id + "']").attr('data-accounts', account.accounts).attr('data-courses', account.courses).attr('data-groups', account.groups);
 
-                    //$("ul").append("<li>" + user.name + user.category + "</li>");
-                    $("tr[data-user-id='" + account.id + "']").attr('data-accounts', '1,2,3').attr('data-courses', '1,2,3').attr('data-groups', '1,2,3');
+	                $.each(account.users, function(index, user){
 
-                })
+	                    //$("ul").append("<li>" + user.name + user.category + "</li>");          
+
+	                })
 
             });
 
