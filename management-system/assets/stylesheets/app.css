@@ -1,0 +1,21 @@
+.container {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.cmp-user-list {
+	height: 315px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.cmp-user-list .table-bordered {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.cmp-user-list tbody tr {
+	cursor: pointer;
+}

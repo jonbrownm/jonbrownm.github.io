@@ -23,12 +23,16 @@ $("input[type='search']").keyup(function(){
 
 $(document).on("click","table[data-type='users'] tbody tr", function() {
 	
-	$("table[data-type='users'] tbody tr").removeClass("selected");
-	$(this).toggleClass("selected");
+	$("table[data-type='users'] tbody tr").removeClass("active");
+	$(this).toggleClass("active");
 
 	$("a[href='#details']").tab("show");
 
-	selectedUserId = $(this).attr('data-user-id')
+	selectedUserId = $(this).attr('data-user-id');
+	selectedAccounts = $(this).attr('data-accounts');
+	selectedCourses = $(this).attr('data-courses');
+	selectedGroups = $(this).attr('data-groups');
+
 	selectedFirstName = $("tr[data-user-id='" + selectedUserId + "'] td:first").text();
 	selectedLastName = $("tr[data-user-id='" + selectedUserId + "'] td:nth-child(2)").text();
 	selectedEmailAddress = $("tr[data-user-id='" + selectedUserId + "'] td:nth-child(3)").text();
@@ -39,5 +43,14 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 	$("div.tab-pane[data-type='details'] input#email-address").val(selectedEmailAddress);
 	$("div.tab-pane[data-type='details'] input#enabled").val("True");
 	$("div.tab-pane[data-type='details'] input#user-id").val(selectedUserId);
+
+	// Accounts
+	$("div.tab-pane[data-type='accounts'] input#account-name").val(selectedAccounts);
+
+	// Courses
+	$("div.tab-pane[data-type='courses'] input#course-name").val(selectedCourses);
+
+	// Groups
+	$("div.tab-pane[data-type='groups'] input#group-name").val(selectedGroups);
 		
 });
