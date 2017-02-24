@@ -1,0 +1,22 @@
+[  
+   {  
+      "code":1,
+      "name":"Red",
+      "description":""
+   },
+   {  
+      "code":2,
+      "name":"Blue",
+      "description":""
+   },
+   {  
+      "code":3,
+      "name":"Green",
+      "description":""
+   },
+   {  
+      "code":4,
+      "name":"Black",
+      "description":""
+   }
+]

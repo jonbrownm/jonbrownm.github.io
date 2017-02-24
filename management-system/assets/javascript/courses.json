@@ -1,0 +1,27 @@
+[  
+   {  
+      "code":1,
+      "name":"Level 1 course",
+      "description":""
+   },
+   {  
+      "code":2,
+      "name":"Level 2 course",
+      "description":""
+   },
+   {  
+      "code":3,
+      "name":"Level 3 course",
+      "description":""
+   },
+   {  
+      "code":4,
+      "name":"Level 4 course",
+      "description":""
+   },
+   {  
+      "code":5,
+      "name":"Level 5 course",
+      "description":""
+   }
+]

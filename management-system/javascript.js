@@ -52,7 +52,27 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 	if (selectedAccounts != "") {
 		var selectedAccount = selectedAccounts.split(',');
 		$.each( selectedAccount, function( key, value ) {
-			$("div.tab-pane[data-type='accounts'] ul").append("<li>Generic account " + value + "</li>");
+
+			$.ajax({
+			    url: "assets/javascript/accounts.json",
+			    async: true,
+			    dataType: "json",
+			    success: function(data) {
+
+			    	$.each(data, function(i, item) {
+
+			    		if(item.code == value) {
+
+				        	$("div.tab-pane[data-type='accounts'] ul").append("<li>" + item.name + "  (" + value + ")</li>");
+
+				    	}
+					
+					});		
+
+				}
+
+			})
+			
 		});
 	}
 	
@@ -60,7 +80,27 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 	if (selectedCourses != "") {
 		var selectedCourse = selectedCourses.split(',');
 		$.each( selectedCourse, function( key, value ) {
-			$("div.tab-pane[data-type='courses'] ul").append("<li>Generic course " + value + "</li>");
+
+			$.ajax({
+			    url: "assets/javascript/courses.json",
+			    async: true,
+			    dataType: "json",
+			    success: function(data) {
+
+			    	$.each(data, function(i, item) {
+
+			    		if(item.code == value) {
+
+				        	$("div.tab-pane[data-type='courses'] ul").append("<li>" + item.name + "  (" + value + ")</li>");
+
+				    	}
+					
+					});		
+
+				}
+
+			})
+			
 		});
 	}
 
@@ -68,8 +108,32 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 	if (selectedGroups != "") {
 		var selectedGroup = selectedGroups.split(',');
 		$.each( selectedGroup, function( key, value ) {
-			$("div.tab-pane[data-type='groups'] ul").append("<li>Generic group " + value + "</li>");
+
+			$.ajax({
+			    url: "assets/javascript/groups.json",
+			    async: true,
+			    dataType: "json",
+			    success: function(data) {
+
+			    	$.each(data, function(i, item) {
+
+			    		if(item.code == value) {
+
+				        	$("div.tab-pane[data-type='groups'] ul").append("<li>" + item.name + "  (" + value + ")</li>");
+
+				    	}
+					
+					});		
+
+				}
+
+			})
+			
 		});
 	}
 		
 });
+
+
+
+

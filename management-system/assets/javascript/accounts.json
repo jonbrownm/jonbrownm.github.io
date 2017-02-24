@@ -1,0 +1,22 @@
+[  
+   {  
+      "code":1,
+      "name":"Super Administrator",
+      "description":"This is a Super Administrator account"
+   },
+   {  
+      "code":2,
+      "name":"Administrator",
+      "description":"This is a Administrator account"
+   },
+   {  
+      "code":3,
+      "name":"Manager",
+      "description":"This is a Manager account"
+   },
+   {  
+      "code":4,
+      "name":"User",
+      "description":"This is a User account"
+   }
+]
