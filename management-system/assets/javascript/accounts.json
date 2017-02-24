@@ -1,22 +1,22 @@
 [  
    {  
       "code":1,
-      "name":"Super Administrator",
-      "description":"This is a Super Administrator account"
+      "name":"Account Managers",
+      "description":"This is a Account Managers account"
    },
    {  
       "code":2,
-      "name":"Administrator",
-      "description":"This is a Administrator account"
+      "name":"Project Managers",
+      "description":"This is a Project Managers account"
    },
    {  
       "code":3,
-      "name":"Manager",
-      "description":"This is a Manager account"
+      "name":"Web Developers",
+      "description":"This is a Web Developers account"
    },
    {  
       "code":4,
-      "name":"User",
-      "description":"This is a User account"
+      "name":"Web Designers",
+      "description":"This is a Web Designers account"
    }
 ]

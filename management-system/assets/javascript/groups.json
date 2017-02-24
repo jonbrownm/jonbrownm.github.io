@@ -1,17 +1,17 @@
 [  
    {  
       "code":1,
-      "name":"Red",
-      "description":""
+      "name":"Administrator",
+      "description":"This is a Administrator account"
    },
    {  
       "code":2,
-      "name":"Blue",
-      "description":""
+      "name":"Manager",
+      "description":"This is a Manager account"
    },
    {  
       "code":3,
-      "name":"Green",
-      "description":""
+      "name":"User",
+      "description":"This is a User account"
    }
 ]
