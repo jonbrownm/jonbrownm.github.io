@@ -67,7 +67,7 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 
 				    	}
 					
-					});		
+					});
 
 				}
 
