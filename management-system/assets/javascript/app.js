@@ -99,6 +99,20 @@ $("input[type='search']").keyup(function(){
 
 });
 
+$(".cmp-modal-new-user button[data-new-user]").click(function() {
+	newUserName = $(".cmp-modal-new-user #new-first-name").val();
+	newUserLastName = $(".cmp-modal-new-user #new-last-name").val();
+	newUserEmailAddress = $(".cmp-modal-new-user #new-email-address").val();
+
+	if ((newUserName !="") && (newUserLastName !="") && (newUserEmailAddress !="")) {
+		$("div.cmp-user-list table tbody").append("<tr data-user-id=''><td>" + newUserName + "</td><td>" + newUserLastName + "</td><td>" + newUserEmailAddress + "</td></tr>");
+		$(".cmp-modal-new-user").modal("hide");
+		$(".cmp-modal-new-user #new-first-name").val("");
+		$(".cmp-modal-new-user #new-last-name").val("");
+		$(".cmp-modal-new-user #new-email-address").val("");
+	}
+});
+
 $(document).on("click","table[data-type='users'] tbody tr", function() {
 	
 	$(".cmp-user-data[data-user-data-invalid]").hide();
@@ -123,11 +137,11 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 	selectedEmailAddress = $("tr[data-user-id='" + selectedUserId + "'] td:nth-child(3)").text();
 
 	// Profile
-	$("div.tab-pane[data-type='details'] input#first-name").val(selectedFirstName);
-	$("div.tab-pane[data-type='details'] input#last-name").val(selectedLastName);
-	$("div.tab-pane[data-type='details'] input#email-address").val(selectedEmailAddress);
-	$("div.tab-pane[data-type='details'] input#enabled").val("True");
-	$("div.tab-pane[data-type='details'] input#user-id").val(selectedUserId);
+	$("div.tab-pane[data-type='details'] input#selected-first-name").val(selectedFirstName);
+	$("div.tab-pane[data-type='details'] input#selected-last-name").val(selectedLastName);
+	$("div.tab-pane[data-type='details'] input#selected-email-address").val(selectedEmailAddress);
+	//$("div.tab-pane[data-type='details'] input#selected-enabled").val("True");
+	$("div.tab-pane[data-type='details'] input#selected-user-id").val(selectedUserId);
 
 	// Accounts
 	if (selectedAccounts != "") {

@@ -54,7 +54,7 @@
 	    				<div class="panel-body">
 	    					<div class="row">
 	    						<div class="col-md-4">
-	    							<a class="btn btn-default" href="#" role="button">Add user</a>
+	    							<a href="" class="btn btn-default" data-toggle="modal" data-target="#modalNewUser">New user</a>
 	    						</div>
 	    						<div class="col-md-8">
 			    					<input type="search" data-type="users" class="form-control" placeholder="Search by first name, last name or email address ...">
@@ -102,15 +102,15 @@
 			    						<div class="col-md-6">
 			    							<div class="form-group">
 			    								<label for="first-name">First name</label>
-			    								<input type="text" class="form-control" id="first-name" placeholder="First name">
+			    								<input type="text" class="form-control" id="selected-first-name" placeholder="First name">
 			    							</div>
 			    							<div class="form-group">
 			    								<label for="last-name">Last name</label>
-			    								<input type="text" class="form-control" id="last-name" placeholder="Last name">
+			    								<input type="text" class="form-control" id="selected-last-name" placeholder="Last name">
 			    							</div>
 			    							<div class="form-group">
 			    								<label for="email-address">Email address</label>
-			    								<input type="email" class="form-control" id="email-address" placeholder="Email address">
+			    								<input type="email" class="form-control" id="selected-email-address" placeholder="Email address">
 			    							</div>
 			    						</div>
 			    						<div class="col-md-6">
@@ -120,7 +120,7 @@
 			    							</div>
 			    							<div class="form-group">
 			    								<label for="user-id">User ID</label>
-			    								<input type="text" disabled class="form-control" id="user-id" placeholder="User ID">
+			    								<input type="text" disabled class="form-control" id="selected-user-id" placeholder="User ID">
 			    							</div>
 			    						</div>
 			    					</div>
@@ -173,6 +173,36 @@
 	    		</div>
 	    	</div>
 
+	    </div>
+
+	    <!-- Modal accounts -->
+	    <div class="cmp-modal-new-user modal fade" id="modalNewUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	    	<div class="modal-dialog" role="document">
+	    		<div class="modal-content">
+	    			<div class="modal-header">
+	    				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	    				<h4 class="modal-title" id="myModalLabel">New user</h4>
+	    			</div>
+	    			<div class="modal-body">
+	    				<div class="form-group">
+	    					<label for="first-name">First name</label>
+	    					<input type="text" class="form-control" id="new-first-name" placeholder="First name">
+	    				</div>
+	    				<div class="form-group">
+	    					<label for="last-name">Last name</label>
+	    					<input type="text" class="form-control" id="new-last-name" placeholder="Last name">
+	    				</div>
+	    				<div class="form-group">
+	    					<label for="email-address">Email address</label>
+	    					<input type="email" class="form-control" id="new-email-address" placeholder="Email address">
+	    				</div>
+	    			</div>
+	    			<div class="modal-footer">
+	    				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	    				<button type="button" class="btn btn-primary" data-new-user>Save changes</button>
+	    			</div>
+	    		</div>
+	    	</div>
 	    </div>
 
 	    <!-- Modal accounts -->
