@@ -96,7 +96,7 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 
 			    		if(item.code == value) {
 
-				        	$("div.tab-pane[data-type='accounts'] ul").append("<li>" + item.name + "  (" + value + ")</li>");
+				        	$("div.tab-pane[data-type='accounts'] ul").append("<li class='list-group-item'>" + item.name + "  <span class='badge'>" + value + "</span></li>");
 
 				    	}
 					
@@ -124,7 +124,7 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 
 			    		if(item.code == value) {
 
-				        	$("div.tab-pane[data-type='courses'] ul").append("<li>" + item.name + "  (" + value + ")</li>");
+				        	$("div.tab-pane[data-type='courses'] ul").append("<li class='list-group-item'>" + item.name + " <span class='badge'>" + value + "</span></li>");
 
 				    	}
 					
@@ -152,7 +152,7 @@ $(document).on("click","table[data-type='users'] tbody tr", function() {
 
 			    		if(item.code == value) {
 
-				        	$("div.tab-pane[data-type='groups'] ul").append("<li>" + item.name + "  (" + value + ")</li>");
+				        	$("div.tab-pane[data-type='groups'] ul").append("<li class='list-group-item'>" + item.name + " <span class='badge'>" + value + "</span></li>");
 
 				    	}
 					
