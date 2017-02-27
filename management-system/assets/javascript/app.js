@@ -28,9 +28,6 @@ $(document).ready(function() {
 
 });
 
-
-
-
 $("input[type='search']").keyup(function(){ 
 		
 	var type = $(this).data("type");
@@ -56,6 +53,9 @@ $("input[type='search']").keyup(function(){
 
 $(document).on("click","table[data-type='users'] tbody tr", function() {
 	
+	$(".cmp-user-data[data-user-data-invalid]").hide();
+	$(".cmp-user-data[data-user-data-valid]").show();
+
 	$("table[data-type='users'] tbody tr").removeClass("active");
 	$(this).toggleClass("active");
 
