@@ -26,6 +26,54 @@ $(document).ready(function() {
 
     })
 
+	$.ajax({
+		url: "assets/javascript/accounts.json",
+		async: true,
+		dataType: "json",
+		success: function(data) {
+
+			$.each(data, function(i, item) {
+
+				$("div#modalAccounts .modal-body ul").append("<li class='list-group-item'><span>" + item.name + "</span><div class='btn-group pull-right' data-toggle='buttons'><label class='btn btn-primary'><input type='checkbox'> On</label><label class='btn btn-primary'><input type='checkbox'> Off</label></div><div class='clearfix'></div></li>");
+
+			});		
+
+		}
+
+	})
+
+	$.ajax({
+		url: "assets/javascript/courses.json",
+		async: true,
+		dataType: "json",
+		success: function(data) {
+
+			$.each(data, function(i, item) {
+
+				$("div#modalCourses .modal-body ul").append("<li class='list-group-item'><span>" + item.name + "</span><div class='btn-group pull-right' data-toggle='buttons'><label class='btn btn-primary'><input type='checkbox'> On</label><label class='btn btn-primary'><input type='checkbox'> Off</label></div><div class='clearfix'></div></li>");
+
+			});		
+
+		}
+
+	})
+
+	$.ajax({
+		url: "assets/javascript/groups.json",
+		async: true,
+		dataType: "json",
+		success: function(data) {
+
+			$.each(data, function(i, item) {
+
+				$("div#modalGroups .modal-body ul").append("<li class='list-group-item'><span>" + item.name + "</span><div class='btn-group pull-right' data-toggle='buttons'><label class='btn btn-primary'><input type='checkbox'> On</label><label class='btn btn-primary'><input type='checkbox'> Off</label></div><div class='clearfix'></div></li>");
+
+			});		
+
+		}
+
+	})
+
 });
 
 $("input[type='search']").keyup(function(){ 

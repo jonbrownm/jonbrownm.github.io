@@ -1,4 +1,8 @@
 
+body {
+	font-family: helvetica;
+}
+
 .container {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -39,4 +43,9 @@
 	padding-top: 20px;
 	min-height: 300px;
 	font-weight: 200;
+}
+
+.cmp-modal-accounts .modal-body ul li span, .cmp-modal-courses .modal-body ul li span, .cmp-modal-groups .modal-body ul li span {
+	display: inline-block;
+	padding-top: 7px;
 }
