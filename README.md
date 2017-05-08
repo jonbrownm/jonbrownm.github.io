@@ -4,7 +4,7 @@ Repository containing personal projects and tools
 * http://jonbrownm.github.io/
 
 * http://jonbrownm.github.io/acronym-search/
- * HTML | CSS | AngularJS | JSON
+[HTML] [CSS] [AngularJS] [JSON]
 
 * http://jonbrownm.github.io/random-generator/
  * HTML | CSS | AngularJS | JSON
@@ -22,3 +22,7 @@ Repository containing personal projects and tools
  * HTML | CSS | JQuery
 
 * http://jonbrownm.github.io/management-system/
+ * HTML | CSS | JQuery
+
+* http://jonbrownm.github.io/string-replacement/
+ * HTML | CSS | Vanilla JS
