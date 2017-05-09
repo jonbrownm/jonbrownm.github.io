@@ -24,5 +24,5 @@ Repository containing personal projects and tools
 * http://jonbrownm.github.io/management-system/
 [HTML] [CSS] [JQuery]
 
-* http://jonbrownm.github.io/string-replacement/
+* http://jonbrownm.github.io/rewrite-dom-content/
 [HTML] [CSS] [Vanilla JS]
