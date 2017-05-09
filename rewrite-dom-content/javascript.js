@@ -1,12 +1,12 @@
 (function() {
 
   // calculate current date
-  // var currentTime = new Date();
-  // currentYear = currentTime.getFullYear();
+     var currentTime = new Date();
+     currentYear = currentTime.getFullYear();
 
   var config = {
     att: "data-rewrite-year",
-    string: "2020"
+    string: currentYear
   },
 
   rewriteDomContent = function(element) {
