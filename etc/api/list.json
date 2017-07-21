@@ -1,0 +1,50 @@
+[{
+    "image":  "https://business.bt.com/content/dam/bt/business/mobile/samsung/galaxy-s8/170320_mobile_samsung_galaxyS8_black_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "monthly": 48.0,
+    "handset_name": "Samsung Galaxy S8",
+    "page_path": "/product/galaxy-s8"
+}, {
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/apple/iphone-7/161130_mobile_apple_iphone7_silver_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "monthly": 43.0,
+    "handset_name": "Apple iPhone 7",
+    "page_path": "/product/iphone-7"
+}, {
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/samsung/galaxy-s8-plus/170321_mobile_samsung_galaxyS8plus_black_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "monthly": 66.0,
+    "handset_name": "Samsung Galaxy S8+",
+    "page_path": "/product/galaxy-s8-plus"
+}, {
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/google/pixel/google_pixel_black_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "monthly": 43.0,
+    "handset_name": "Google Pixel",
+    "page_path": "/product/pixel"
+}, {
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/samsung/galaxy-s7/161122_mobile_samsung_galaxyS7_black_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "monthly": 43.0,
+    "handset_name": "Samsung Galaxy S7",
+    "page_path": "/product/galaxy-s7"
+}, {
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/google/pixel-xl/google_pixelXL_black_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "capacities": ["32GB"],
+    "monthly": 66.0,
+    "handset_name": "Google Pixel XL",
+    "page_path": "/product/pixel-xl"
+}, {
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/apple/iphone-7-plus/161130_mobile_apple_iphone7plus_silver_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "capacities": ["32GB", "128GB", "256GB"],
+    "monthly": 53.0,
+    "handset_name": "Apple iPhone 7 Plus",
+    "page_path": "/product/iphone-7-plus"
+}, {
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/samsung/galaxy-s7-edge/161122_mobile_samsung_galaxyS7edge_black_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "capacities": ["32GB"],
+    "monthly": 43.0,
+    "handset_name": "Samsung Galaxy S7 edge",
+    "page_path": "/product/galaxy-s7-edge"
+}, {
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/samsung/galaxy-xcover3/161122_mobile_samsung_galaxyXcover3_black_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "capacities": ["8GB"],
+    "monthly": 23.0,
+    "handset_name": "Samsung Xcover 3",
+    "page_path": "/product/galaxy-xcover-3"
+}]

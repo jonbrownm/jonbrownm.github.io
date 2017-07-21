@@ -1,0 +1,25 @@
+{
+    "image": "https://business.bt.com/content/dam/bt/business/mobile/apple/iphone-7-plus/161130_mobile_apple_iphone7plus_silver_front_SML.jpg/jcr:content/renditions/cq5dam.web.320.320.jpeg",
+    "capacities": ["32GB", "128GB", "256GB"],
+    "upfront": 8.33,
+    "monthly": 53.0,
+    "handset_name": "iPhone 7 Plus",
+    "banner_text": null,
+    "metaDescription": "The Apple iPhone 7 Plus smartphone powered by iOS comes with a wide range of apps for business. Learn more about the range of BT contracts available.",
+    "colours": [{
+        "key": "Rose Gold",
+        "value": "#f3d0cc"
+    }, {
+        "key": "Black",
+        "value": "#000000"
+    }, {
+        "key": "Gold",
+        "value": "#d4af37"
+    }, {
+        "key": "Silver",
+        "value": "#e8e9e9"
+    }, {
+        "key": "Jet Black",
+        "value": "#1d1f22"
+    }]
+}
