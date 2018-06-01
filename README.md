@@ -29,10 +29,10 @@ The following information details the structure of the codebase…
 ## Tools
 To following tools can be found in this repository:
 
-* <http://jonbrownm.github.io/acronym-search/> `renders`
-* <http://jonbrownm.github.io/random-generator/>
-* <http://jonbrownm.github.io/object-search/>
-* [http://jonbrownm.github.io/options-checker/](http://jonbrownm.github.io/options-checker/?products=2725&4374&8962&9407&linereference=02084160058)
-* <http://jonbrownm.github.io/sentence-tool/>
-* <http://jonbrownm.github.io/management-system/>
-* <http://jonbrownm.github.io/rewrite-dom-content/>
+* <http://jonbrownm.github.io/acronym-search/>  `JavaScript` `Angular JS`
+* <http://jonbrownm.github.io/random-generator/>  `JavaScript` `Angular JS`
+* <http://jonbrownm.github.io/object-search/>  `JavaScript` `Angular JS`
+* [http://jonbrownm.github.io/options-checker/](http://jonbrownm.github.io/options-checker/?products=2725&4374&8962&9407&linereference=02084160058)  `JavaScript` `jQuery`
+* <http://jonbrownm.github.io/sentence-tool/>  `JavaScript` `jQuery`
+* <http://jonbrownm.github.io/management-system/>  `JavaScript` `jQuery`
+* <http://jonbrownm.github.io/rewrite-dom-content/>  `JavaScript` `Vanilla`
