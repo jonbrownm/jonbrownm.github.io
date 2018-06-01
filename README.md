@@ -5,12 +5,12 @@ This repository contains small tools for experimenting with javascript and frame
 *Latest version running on <http://jonbrownm.github.io/>*
 
 ## Installation
-To get the tools up and running, simply view the tool in the browser. There is no installation required.
+To get the tools up and running, simply view the tool in the browser. There is no installation or local server required.
 
 ## Deployment
-To deploy this to the current production environment, simply commit to the repo.
+To deploy this to the current production environment, simply commit to the repo. This follows the GitHub Pages setup for static site hosting.
 
-This will publish the contents of `dist` to <http://jonbrownm.github.io/>.
+This will publish the contents of the repo to <http://jonbrownm.github.io/>.
 
 ## Repository structure
 The following information details the structure of the codebase…
