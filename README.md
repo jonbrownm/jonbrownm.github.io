@@ -1,25 +1,38 @@
-# jonbrownm.github.io
-Repository containing personal projects and tools
+## Overview
 
-* http://jonbrownm.github.io/
+This repository contains small tools for experimenting with javascript and frameworks.
 
-* http://jonbrownm.github.io/acronym-search/
-[HTML] [CSS] [AngularJS] [JSON]
+*Latest version running on <http://jonbrownm.github.io/>*
 
-* http://jonbrownm.github.io/random-generator/
-[HTML] [CSS] [AngularJS] [JSON]
+## Installation
+To get the tools up and running, simply view the tool in the browser. There is no installation required.
 
-* http://jonbrownm.github.io/object-search/
-[HTML] [CSS] [AngularJS] [JSON]
+## Deployment
+To deploy this to the current production environment, simply commit to the repo.
 
-* http://jonbrownm.github.io/options-checker/?products=2725&4374&8962&9407&linereference=02084160058
-[HTML] [CSS] [JQuery] [JSON]
+This will publish the contents of `dist` to <http://jonbrownm.github.io/>.
 
-* http://jonbrownm.github.io/sentence-tool/
-[HTML] [CSS] [JQuery] [JSON]
+## Repository structure
+The following information details the structure of the codebase…
 
-* http://jonbrownm.github.io/management-system/
-[HTML] [CSS] [JQuery]
+```
+/
+├─ acronym-search/           # Acronym Search tool
+├─ random-generator/         # Random Generator tool
+├─ object-search/            # Object Search tool
+├─ options-checker/          # Options Checker tool
+├─ sentence-tool/            # Sentence tool
+├─ management-system/        # Management System tool
+└─ rewrite-dom-content/      # Rewrite DOM Content tool
+```
 
-* http://jonbrownm.github.io/rewrite-dom-content/
-[HTML] [CSS] [Vanilla JS]
+## Tools
+To following tools can be found in this repository:
+
+* <http://jonbrownm.github.io/acronym-search/>
+* <http://jonbrownm.github.io/random-generator/>
+* <http://jonbrownm.github.io/object-search/>
+* <http://jonbrownm.github.io/options-checker/?products=2725&4374&8962&9407&linereference=02084160058>
+* <http://jonbrownm.github.io/sentence-tool/>
+* <http://jonbrownm.github.io/management-system/>
+* <http://jonbrownm.github.io/rewrite-dom-content/>
