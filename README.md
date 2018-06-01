@@ -18,9 +18,6 @@ Repository containing personal projects and tools
 * http://jonbrownm.github.io/sentence-tool/
 [HTML] [CSS] [JQuery] [JSON]
 
-* http://jonbrownm.github.io/list-manager/
-[HTML] [CSS] [JQuery]
-
 * http://jonbrownm.github.io/management-system/
 [HTML] [CSS] [JQuery]
 
